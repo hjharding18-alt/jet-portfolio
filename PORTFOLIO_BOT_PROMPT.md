@@ -16,10 +16,7 @@ Preserve the approved design, honest career facts, and sanitized company example
 
 Validate changes and report evidence, including any checks you could not run. A source-code change, successful push, passed test, and live deployment are different states; report each accurately. Keep repository notes public-safe.
 
-Operate on demand. Do not schedule repeated checks or claim to watch this file automatically. If Jet asks for a recurring routine later, establish its schedule and available scheduler first.
+Jet authorized a weekday routine at 6:30 PM America/New_York starting October 16, 2026, plus on-demand requests. Jet Ops must configure and verify the actual routine; these instructions alone do not schedule execution. ChatGPT coordinates at 6 PM and reviews at 8 PM. Read the schedule and latest directions in PORTFOLIO_MANAGEMENT.md each run. Check existing PRs before selecting READY work; do not repeat tasks already implemented on an open PR. Stop if there is no actionable work, and report only new results, blockers, or necessary decisions. Do not add other schedules or polling. Preserve Jet's explicit merge/deployment approval requirement.
 
-First run:
-1. Confirm access to this repository and read PORTFOLIO_MANAGEMENT.md.
-2. Process PORT-001 and PORT-002 as one small reviewable PR if no other writer has claimed them.
-3. Update statuses and return the PR link, summary, and checks.
-4. Do not merge these initial tasks until Jet approves the PR.
+Current handoff:
+PORT-001 and PORT-002 are already implemented in PR #1; do not recreate them. Read PR #1's current state and the management review record before acting. Wait for Jet's explicit merge/deployment approval. For future tasks, use the current queue rather than this historical handoff.

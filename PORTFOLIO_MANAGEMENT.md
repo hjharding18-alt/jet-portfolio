@@ -3,7 +3,7 @@
 Updated: 2026-10-15
 Owner: Jet Harding
 Coordinator: ChatGPT / Codex
-Implementation bot: Jet Portfolio Manager (pending creation in Grok)
+Implementation bot: Jet Portfolio Manager (created; weekday routine pending Jet Ops setup)
 Repository: https://github.com/hjharding18-alt/jet-portfolio
 Site: https://jet-portfolio.pages.dev/
 Branch: main
@@ -42,7 +42,26 @@ Career application research or drafting may be proposed separately. Sending recr
 6. Default publish policy for new tasks: PR review. Merge/deploy only when the task explicitly records Jet's publication authorization. Existing-site publication approval does not automatically approve a substantial redesign.
 7. Check whether Cloudflare is Git-integrated or manually deployed; do not assume a push changes the live site.
 8. Record PR URL, commit, checks, limitations, and deployment result. Mark DONE only when acceptance criteria are met; use IMPLEMENTED_AWAITING_REVIEW or BLOCKED otherwise.
-9. Do not create recurring monitoring or spend credits polling unless Jet explicitly requests a schedule. On-demand runs end when READY work is complete or blocked.
+9. Jet authorized weekday evening coordination on October 15, 2026. Follow the schedule below; stop each run when work is complete or blocked. Do not add polling or other schedules.
+
+## Weekday evening coordination — America/New_York
+
+Authorized by Jet on October 15, 2026; starts October 16, 2026.
+- 6:00 PM: ChatGPT prioritizes Jet's recorded requests and reviews outstanding new PR work.
+- 6:30 PM: Jet Portfolio Manager reads current directions and implements READY tasks. Grok routine is authorized but not yet verified as configured; Jet Ops must create it.
+- 8:00 PM: ChatGPT reviews new completed work and reports necessary decisions or blockers.
+- ChatGPT's two runs are configured as one enabled scheduled task.
+- Check open PRs and task branches before selecting work. A task already represented by a PR is not READY to repeat, even when main's queue has not yet absorbed its status update.
+- ChatGPT owns direction and review notes; the bot owns implementation and implementation evidence. Preserve current changes and do not edit another operator's active work.
+- If no actionable work exists, stop. If work remains in progress at review time, defer it to the next run.
+- Notify Jet only for a newly completed review, a new blocker, or a required decision. Avoid repeated unchanged notices.
+- Schedule approval does not authorize merging or deployment. Jet still approves those explicitly.
+- File updates do not trigger either system. Each needs its own configured routine.
+
+### Review record
+PR #1: https://github.com/hjharding18-alt/jet-portfolio/pull/1
+Reviewed head: ecc487d1146c1531e2794800dde9912d35a3dc1c
+ChatGPT source review: no blocking findings; two expected text substitutions and management status updates only. Browser screenshots not independently inspected. Await Jet's merge/deployment approval. Do not repeat PORT-001 or PORT-002.
 
 ## Work queue
 
