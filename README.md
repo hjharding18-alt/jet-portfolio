@@ -23,6 +23,7 @@ Choose the correct Cloudflare account and a new Pages project. Verify the return
 - Original prototype performance claims were omitted pending confirmation.
 - Operating-plan validation methodology is explicitly illustrative.
 - Golf beta is described without fabricated public access or product screenshots.
+- Headshot (jet-headshot.jpg, 600px) cropped from the photo Jet supplied.
 - No analytics scripts, cookies, third-party fonts, or confidential assets.
 
 ## Review
