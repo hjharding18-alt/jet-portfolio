@@ -96,9 +96,9 @@ Branch: port-003-leadership-refresh
 Source: Direct request from Jet, GitHub issue #2 (https://github.com/hjharding18-alt/jet-portfolio/issues/2), relayed by Grok Bot.
 Requested outcome: Refresh hero, About/working style, experience, skills, and enterprise project copy to emphasize technical project leadership, stakeholder management, executive presentations, financial analytics, and enterprise reporting; broadly applicable, not CSX-specific.
 Authorized scope: index.html copy only; design, layout, links, and independent projects (including Golf with Jet) preserved.
-Publication: PR review required. Do not merge or deploy until Jet approves in the issue or PR.
+Publication: explicitly authorized by Jet (merge + deploy, 2026-10-15 11:13 PM ET, relayed by Grok Bot): https://github.com/hjharding18-alt/jet-portfolio/pull/3#issuecomment-6207486300
 Acceptance criteria: Only verified facts; no dollar or data-volume figures, internal project names, or direct-report management claims; checks pass.
-Result: PR opened (see issue #2 for link). Checks: HTML parse OK; headless Chrome at 1440px/390px, no horizontal overflow, screenshots reviewed (docs/screenshots/port-003-*.png); axe-core 0 violations; 3 panels toggle via click/Enter/Space; all anchors resolve. Metrics and internal names omitted pending Jet's public-disclosure confirmation.
+Result: PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (reviewed head 4bab4ae); merge and deploy in progress. Checks: HTML parse OK; headless Chrome at 1440px/390px, no horizontal overflow, screenshots reviewed (docs/screenshots/port-003-*.png); axe-core 0 violations; 3 panels toggle via click/Enter/Space; all anchors resolve. Metrics and internal names omitted pending Jet's public-disclosure confirmation.
 Blocker or next action: Jet review of PR and decision on flagged metrics.
 
 ## Task template
