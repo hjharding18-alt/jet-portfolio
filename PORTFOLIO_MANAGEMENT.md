@@ -89,7 +89,7 @@ Acceptance: No reference to an original draft remains; the status is dated and c
 Result: DONE. PR #1 https://github.com/hjharding18-alt/jet-portfolio/pull/1 merged as 46552d13b13fa8246155f9b13feadfe33011cc5f. Deployed manually with wrangler 3.114.17 to existing Pages project jet-portfolio (production, branch main): deployment 61b25d1b-0fd3-4498-8ca2-3636e04f0634 (https://61b25d1b.jet-portfolio.pages.dev). Live checks on https://jet-portfolio.pages.dev/ (headless Chrome, 2026-10-16 UTC): new text present, old drafting text absent; no horizontal overflow at 1440px or 390px and screenshots visually reviewed; axe-core 0 violations; all 3 panels open/close via click, Enter and Space; all in-page anchors resolve. Limitations: automated headless testing only, no physical mobile device.
 
 ### PORT-003 — Leadership-focused portfolio refresh (issue #2)
-Status: IMPLEMENTED_AWAITING_REVIEW
+Status: DONE
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-10-16T03:05Z
 Branch: port-003-leadership-refresh
@@ -98,8 +98,8 @@ Requested outcome: Refresh hero, About/working style, experience, skills, and en
 Authorized scope: index.html copy only; design, layout, links, and independent projects (including Golf with Jet) preserved.
 Publication: explicitly authorized by Jet (merge + deploy, 2026-10-15 11:13 PM ET, relayed by Grok Bot): https://github.com/hjharding18-alt/jet-portfolio/pull/3#issuecomment-6207486300
 Acceptance criteria: Only verified facts; no dollar or data-volume figures, internal project names, or direct-report management claims; checks pass.
-Result: PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (reviewed head 4bab4ae); merge and deploy in progress. Checks: HTML parse OK; headless Chrome at 1440px/390px, no horizontal overflow, screenshots reviewed (docs/screenshots/port-003-*.png); axe-core 0 violations; 3 panels toggle via click/Enter/Space; all anchors resolve. Metrics and internal names omitted pending Jet's public-disclosure confirmation.
-Blocker or next action: Jet review of PR and decision on flagged metrics.
+Result: DONE. PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (reviewed head 4bab4ae) merged as 5cbd98eb1765000eb3c6bb8012f7f2a7bc5b7d54. Deployed manually with wrangler 3.114.17 to existing Pages project jet-portfolio (production, branch main): deployment de4cfd17-cfaa-43d7-81b6-368784598c9d (https://de4cfd17.jet-portfolio.pages.dev). Live checks on https://jet-portfolio.pages.dev/ (2026-10-16 UTC): served HTML identical to merged index.html; new copy present; no horizontal overflow at 1440px/390px, screenshots reviewed; axe-core 0 violations; 3 panels toggle via click/Enter/Space; all in-page anchors resolve; mailto present; LinkedIn href unchanged (HTTP 301 from LinkedIn, final page not verifiable without sign-in); headshot 200. Grep of live HTML: no dollar signs, omitted figures, internal project names, or management/direct-report wording.
+Blocker or next action: None. Omitted metrics and internal names remain unpublished pending any future approval by Jet.
 
 ## Task template
 
@@ -122,3 +122,4 @@ Blocker or next action:
 - 2026-10-16 (UTC): Jet Portfolio Manager merged PR #1 (46552d1) and deployed PORT-001/002 to jet-portfolio production (deployment 61b25d1b) under Jet's recorded approval; live verification passed.
 
 - 2026-10-15 8:38 PM America/New_York: Jet confirmed the live LinkedIn link opens correctly and Jet Portfolio Manager's weekday 6:30 PM routine is confirmed. ChatGPT's 6 PM and 8 PM weekday schedule is configured. No remaining setup blocker is recorded; no new implementation tasks were requested.
+- 2026-10-16 (UTC): Jet Portfolio Manager merged PR #3 (5cbd98e) and deployed PORT-003 to jet-portfolio production (deployment de4cfd17) under Jet's approval (https://github.com/hjharding18-alt/jet-portfolio/pull/3#issuecomment-6207486300); live verification passed; issue #2 closed.
