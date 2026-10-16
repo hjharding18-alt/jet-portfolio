@@ -136,6 +136,13 @@ h1 i{color:var(--acc)}
 .snapnote{font-size:12px;color:#9fbca9;margin:14px 0 0}
 @media(max-width:980px){.mini{grid-template-columns:repeat(4,1fr)}.feat{gap:28px;padding:28px}}
 @media(max-width:720px){.feat{grid-template-columns:1fr;padding:22px}.feat.flip .ftxt{order:0}.mini{grid-template-columns:repeat(2,1fr)}.feats{margin-top:56px}}
+.bridge{padding:0 0 110px;background:var(--bg)}
+.bridge-box{border:1px solid var(--line);border-radius:24px;padding:48px;text-align:center;background:radial-gradient(600px 240px at 50% 0,rgba(124,196,255,.10),transparent 70%),var(--bg2)}
+.bridge-box .eyebrow{color:var(--acc);margin:0}.bridge-box h2{font:400 clamp(30px,4vw,48px)/1.1 var(--serif);letter-spacing:-.02em;margin:12px 0 0}
+.bridge-box .cta{justify-content:center}
+.projects{padding:0 0 110px;background:var(--bg)}.projects .eyebrow{color:var(--acc)}.projects .sec-head p{color:var(--mut)}
+.proj-split{margin-top:0}.proj-split .door{min-height:260px;padding:36px}.proj-split .door h2{font-size:clamp(30px,3.4vw,42px)}
+@media(max-width:720px){.bridge,.projects{padding-bottom:72px}.bridge-box{padding:32px 20px}.proj-split .door{min-height:0;padding:26px}}
 /* how I work */
 .how{padding:110px 0;background:var(--bg)}
 .how .eyebrow{color:var(--acc)}.how .sec-head p{color:var(--mut)}
@@ -159,6 +166,8 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 .case-grid{grid-template-columns:1fr}.case-grid section{border-right:0;border-bottom:1px solid var(--pline)}.case-top,.flow,.note{padding-left:22px;padding-right:22px}.flow .ar{transform:rotate(90deg);padding:6px 0;margin:auto}.flow{flex-direction:column}
 .stage{grid-template-columns:1fr}.stage .phone{max-width:260px;margin:0 auto}.caps{grid-template-columns:1fr}.phases{grid-template-columns:repeat(5,1fr)}
 .ent-sec,.gwj-sec,.how{padding:72px 0}.cbox{padding:34px 24px}.skillmap div,.layers div{grid-template-columns:1fr}.shots2 .swatch{max-width:280px}}
+main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom:72px}.xp-sec{padding-top:96px}.xp-sec .xp{margin-top:0}
+@media(max-width:720px){.how#how{padding-bottom:56px}.xp-sec{padding-top:64px}}
 @media print{.top,.cta{display:none}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -167,21 +176,36 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 <header class="top"><div class="wrap">
 <a class="brand" href="#main">JET HARDING<b>.</b></a>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr">Menu</span><span class="bars" aria-hidden="true"></span></button>
-<nav id="site-nav" aria-label="Primary"><a href="#enterprise">Enterprise</a><a href="#golf">Golf With Jet</a><a href="#how">How I work</a><a href="#contact">Contact</a></nav>
+<nav id="site-nav" aria-label="Primary"><a href="#how">How I work</a><a href="#projects">Projects</a><a href="#enterprise">Enterprise</a><a href="#golf">Golf With Jet</a><a href="#experience">Experience</a><a href="#contact">Connect</a></nav>
 </div></header>
 <main id="main">
 <section class="hero"><div class="wrap">
 <div class="who rv"><img src="assets/jet.webp" width="52" height="52" alt="Portrait of Jet Harding">Jacksonville, FL · Senior Software Developer</div>
 <h1 class="rv">I turn messy business questions into <i>systems people trust.</i></h1>
 <p class="lede rv">Analytics engineer and technical project lead. For a decade I've worked where finance, operations and data meet: <strong>SQL Server, Power BI and semantic models</strong> at enterprise scale by day, and <strong>Golf With Jet</strong>, a live-scoring product I independently developed and launched.</p>
-<div class="cta rv"><a class="btn pri" href="#enterprise">See the work ↓</a><a class="btn" href="mailto:Hjharding18@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/halston-jet-harding-4b5ab8ab/">LinkedIn ↗</a></div>
-<div class="split">
-<a class="door ent rv" href="#enterprise"><span class="eyebrow">A · Enterprise Analytics &amp; Engineering</span><h2>Retail analytics modernization</h2><p>Technical project lead and primary BI developer. Delivered to users in 2026.</p><span class="arr" aria-hidden="true">→</span></a>
-<a class="door gwj rv" href="#golf"><span class="eyebrow">B · Independent software product</span><h2>Golf With Jet</h2><p>Live tournament scoring, six formats, GPS course maps. Closed beta, rebuild in final testing.</p><span class="arr" aria-hidden="true">→</span></a>
-</div>
+<div class="cta rv"><a class="btn pri" href="#projects">See the work ↓</a><a class="btn" href="mailto:Hjharding18@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/halston-jet-harding-4b5ab8ab/">LinkedIn ↗</a></div>
 <div class="facts rv"><div><b>10 years</b><span>Enterprise analytics &amp; financial reporting</span></div><div><b>SQL + BI</b><span>SQL Server, Power BI, DAX, semantic models</span></div><div><b>MBA + MS</b><span>Business &amp; applied analytics</span></div><div><b>Technical Lead</b><span>Enterprise analytics &amp; cross-functional delivery</span></div></div>
 </div></section>
 
+<section class="how" id="how" aria-labelledby="h-h"><div class="wrap">
+<div class="sec-head rv"><div><span class="eyebrow">How I work</span><h2 id="h-h">Own the question. Understand the answer.</h2></div><p>Technical project leadership starts with clear requirements, honest trade-offs and shared understanding across business and technical teams.</p></div>
+<div class="prin rv">
+<div><b>01</b><h3>Stakeholders in the loop</h3><p>I established and lead recurring stakeholder meetings for requirements, priorities, status and technical challenges, and present updates to directors and executive leadership.</p></div>
+<div><b>02</b><h3>Data you can trust</h3><p>SQL transformations, stored procedures, semantic and dimensional models, reconciled back to source values so financial and operational reporting holds up.</p></div>
+<div><b>03</b><h3>AI-assisted, human judgment</h3><p>I use AI to move faster on code and unfamiliar territory. I bring the business context, review the output and validate the behavior.</p></div>
+</div>
+</div></section>
+<section class="bridge" aria-labelledby="br-h"><div class="wrap"><div class="bridge-box rv">
+<p class="eyebrow">Next</p><h2 id="br-h">See how that plays out in real work.</h2>
+<div class="cta"><a class="btn pri" href="#projects">Explore My Projects ↓</a><a class="btn" href="#contact">Let's Connect →</a></div>
+</div></div></section>
+<section class="projects" id="projects" aria-labelledby="p-h"><div class="wrap">
+<div class="sec-head rv"><div><span class="eyebrow">Selected projects</span><h2 id="p-h">Two kinds of work, one approach.</h2></div><p>Enterprise analytics delivered inside a large organization, and an independent product I own end to end.</p></div>
+<div class="split proj-split">
+<a class="door ent rv" href="#enterprise"><span class="eyebrow">A · Enterprise Analytics &amp; Engineering</span><h2>Retail analytics modernization</h2><p>Technical project lead and primary BI developer. Delivered to users in 2026.</p><span class="arr" aria-hidden="true">→</span></a>
+<a class="door gwj rv" href="#golf"><span class="eyebrow">B · Independent software product</span><h2>Golf With Jet</h2><p>Live tournament scoring, six formats, GPS course maps. Closed beta, rebuild in final testing.</p><span class="arr" aria-hidden="true">→</span></a>
+</div>
+</div></section>
 <section class="ent-sec" id="enterprise" aria-labelledby="ent-h"><div class="wrap">
 <div class="sec-head rv"><div><span class="eyebrow">A · Enterprise Analytics &amp; Engineering</span><h2 id="ent-h">Business context. Technical ownership.</h2></div>
 <p>Enterprise work is summarized at a public level: no internal screenshots, datasets, customer or employee details, proprietary metrics or company-specific architecture.</p></div>
@@ -279,14 +303,9 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 </div>
 </div></section>
 
-<section class="how" id="how" aria-labelledby="h-h"><div class="wrap">
-<div class="sec-head rv"><div><span class="eyebrow">How I work</span><h2 id="h-h">Own the question. Understand the answer.</h2></div><p>Technical project leadership starts with clear requirements, honest trade-offs and shared understanding across business and technical teams.</p></div>
-<div class="prin rv">
-<div><b>01</b><h3>Stakeholders in the loop</h3><p>I established and lead recurring stakeholder meetings for requirements, priorities, status and technical challenges, and present updates to directors and executive leadership.</p></div>
-<div><b>02</b><h3>Data you can trust</h3><p>SQL transformations, stored procedures, semantic and dimensional models, reconciled back to source values so financial and operational reporting holds up.</p></div>
-<div><b>03</b><h3>AI-assisted, human judgment</h3><p>I use AI to move faster on code and unfamiliar territory. I bring the business context, review the output and validate the behavior.</p></div>
-</div>
-<div class="xp" id="experience">
+
+<section class="how xp-sec" id="experience" aria-label="Experience"><div class="wrap">
+<div class="xp">
 <div class="rv"><span class="eyebrow">Toolkit</span><div class="chips" style="margin-top:16px"><span>SQL Server / SSMS</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Azure Synapse</span><span>Microsoft Fabric</span><span>Tableau</span><span>Excel</span><span>Semantic modeling</span><span>Dimensional modeling</span><span>ETL</span><span>Data warehousing</span><span>TypeScript</span><span>React</span><span>Postgres</span><span>Cloudflare Workers</span></div></div>
 <div class="rv">
 <div class="job"><span class="d">2018 – PRESENT · SWISHER INTERNATIONAL</span><h3>Senior Software Developer</h3><ul>
@@ -298,7 +317,6 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 <div class="job"><span class="d">JACKSONVILLE UNIVERSITY</span><h3>MBA &amp; MS, Applied Business Analytics</h3><p>2021–2023 · BBA 2012–2016 · NCAA Division I Men's Lacrosse · Dean's Honor Roll</p></div>
 </div></div>
 </div></section>
-
 <section class="contact" id="contact"><div class="wrap">
 <div class="cbox rv"><span class="eyebrow" style="color:var(--acc)">Get in touch</span><h2>Let's build something useful.</h2><p>Open to senior analytics engineering, data engineering, software development and technical leadership conversations.</p>
 <div class="cta"><a class="btn pri" href="mailto:Hjharding18@gmail.com">Email Jet ↗</a><a class="btn" href="https://www.linkedin.com/in/halston-jet-harding-4b5ab8ab/">LinkedIn ↗</a></div></div>
