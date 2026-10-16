@@ -47,8 +47,10 @@ Career application research or drafting may be proposed separately. Sending recr
 ## Work queue
 
 ### PORT-001 — Clarify Swisher tenure
-Status: READY
-Owner: unassigned
+Status: IN_PROGRESS
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-10-16T00:20Z
+Branch: port-001-002-tenure-uat
 Publication: PR review required
 Requested outcome: Make the current title distinct from company tenure without asserting an unsupported title date.
 Change: Keep "2018–present · Swisher International" and label the role "Current role: Senior Software Developer." Do not add 2024 as a precise role start date until Jet confirms it for publication.
@@ -56,8 +58,10 @@ Acceptance: The page no longer implies that Senior Software Developer was held c
 Result: pending
 
 ### PORT-002 — Remove drafting language from retail project
-Status: READY
-Owner: unassigned
+Status: IN_PROGRESS
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-10-16T00:20Z
+Branch: port-001-002-tenure-uat
 Publication: PR review required
 Change: Replace "The original project summary described this work as in UAT." with "Status: User acceptance testing (UAT), as of October 2026." Preserve the surrounding validation description.
 Basis: Jet approved the existing panel and its UAT status on October 15, 2026.
