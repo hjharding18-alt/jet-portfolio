@@ -15,4 +15,4 @@ All counts from `hjharding18-alt/golfwithjet`, branch `rebuild/off-lovable` at 4
 | 21 | Rebuild PRs merged | `gh pr list --state merged --base rebuild/off-lovable` |
 | Phases 1-8 merged, 9 testing | Rebuild progress | `git log origin/main..HEAD` subjects reference Phases 1 to 8; Phase 9 = signed-in testing (in progress), Phase 10 = cutover (planned) |
 
-Screenshots: headless Playwright against staging only. Public pages without login; signed-in pages with the demo account portfolio-demo+gwj@example.com, demo tournament "Portfolio Demo Classic" (code VYZN7S) and six fictional players. Course: Stadium Course geometry from OpenStreetMap (ODbL). Geolocation was simulated on hole 6 to show live yardages.
+Screenshots: headless Playwright against the staging build only. Public pages captured signed out; signed-in pages captured with a dedicated demo account in a demo tournament with fictional players. Course geometry from OpenStreetMap (ODbL). Device location was simulated for the live-yardage shot. Join codes are blurred.
