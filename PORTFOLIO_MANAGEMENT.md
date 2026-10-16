@@ -3,7 +3,7 @@
 Updated: 2026-10-15
 Owner: Jet Harding
 Coordinator: ChatGPT / Codex
-Implementation bot: Jet Portfolio Manager (created; weekday routine pending Jet Ops setup)
+Implementation bot: Jet Portfolio Manager (created; weekday 6:30 PM America/New_York routine confirmed by Jet on 2026-10-15)
 Repository: https://github.com/hjharding18-alt/jet-portfolio
 Site: https://jet-portfolio.pages.dev/
 Branch: main
@@ -48,7 +48,7 @@ Career application research or drafting may be proposed separately. Sending recr
 
 Authorized by Jet on October 15, 2026; starts October 16, 2026.
 - 6:00 PM: ChatGPT prioritizes Jet's recorded requests and reviews outstanding new PR work.
-- 6:30 PM: Jet Portfolio Manager reads current directions and implements READY tasks. Grok routine is authorized but not yet verified as configured; Jet Ops must create it.
+- 6:30 PM: Jet Portfolio Manager reads current directions and implements READY tasks. Grok routine is confirmed by Jet as configured (2026-10-15). Scheduler state was not independently inspected by ChatGPT.
 - 8:00 PM: ChatGPT reviews new completed work and reports necessary decisions or blockers.
 - ChatGPT's two runs are configured as one enabled scheduled task.
 - Check open PRs and task branches before selecting work. A task already represented by a PR is not READY to repeat, even when main's queue has not yet absorbed its status update.
@@ -61,7 +61,7 @@ Authorized by Jet on October 15, 2026; starts October 16, 2026.
 ### Review record
 PR #1: https://github.com/hjharding18-alt/jet-portfolio/pull/1
 Reviewed head: ecc487d1146c1531e2794800dde9912d35a3dc1c
-ChatGPT source review: no blocking findings; two expected text substitutions and management status updates only. Browser screenshots not independently inspected. Await Jet's merge/deployment approval. Do not repeat PORT-001 or PORT-002.
+ChatGPT source review: no blocking findings; two expected text substitutions and management status updates only. Browser screenshots not independently inspected. Approval was subsequently recorded and PR #1 merged; see completion evidence below. Do not repeat PORT-001 or PORT-002.
 Merged 2026-10-15 ~8:36 PM ET as 46552d1 and deployed (61b25d1b) under Jet's approval: https://github.com/hjharding18-alt/jet-portfolio/pull/1#issuecomment-6205269018
 
 ## Work queue
@@ -107,3 +107,5 @@ Blocker or next action:
 - 2026-10-15: ChatGPT verified repository access, source HTML, headshot file presence, and removal of noindex. Browser appearance and current Cloudflare deployment were not independently verified by ChatGPT.
 - 2026-10-15: Shared management file and bot setup instructions created. Grok bot creation remains pending; no automated file watcher is configured.
 - 2026-10-16 (UTC): Jet Portfolio Manager merged PR #1 (46552d1) and deployed PORT-001/002 to jet-portfolio production (deployment 61b25d1b) under Jet's recorded approval; live verification passed.
+
+- 2026-10-15 8:38 PM America/New_York: Jet confirmed the live LinkedIn link opens correctly and Jet Portfolio Manager's weekday 6:30 PM routine is confirmed. ChatGPT's 6 PM and 8 PM weekday schedule is configured. No remaining setup blocker is recorded; no new implementation tasks were requested.
