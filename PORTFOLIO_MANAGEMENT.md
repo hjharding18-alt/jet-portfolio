@@ -88,6 +88,19 @@ Basis: Jet approved the existing panel and its UAT status on October 15, 2026.
 Acceptance: No reference to an original draft remains; the status is dated and clear.
 Result: DONE. PR #1 https://github.com/hjharding18-alt/jet-portfolio/pull/1 merged as 46552d13b13fa8246155f9b13feadfe33011cc5f. Deployed manually with wrangler 3.114.17 to existing Pages project jet-portfolio (production, branch main): deployment 61b25d1b-0fd3-4498-8ca2-3636e04f0634 (https://61b25d1b.jet-portfolio.pages.dev). Live checks on https://jet-portfolio.pages.dev/ (headless Chrome, 2026-10-16 UTC): new text present, old drafting text absent; no horizontal overflow at 1440px or 390px and screenshots visually reviewed; axe-core 0 violations; all 3 panels open/close via click, Enter and Space; all in-page anchors resolve. Limitations: automated headless testing only, no physical mobile device.
 
+### PORT-003 — Leadership-focused portfolio refresh (issue #2)
+Status: IMPLEMENTED_AWAITING_REVIEW
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-10-16T03:05Z
+Branch: port-003-leadership-refresh
+Source: Direct request from Jet, GitHub issue #2 (https://github.com/hjharding18-alt/jet-portfolio/issues/2), relayed by Grok Bot.
+Requested outcome: Refresh hero, About/working style, experience, skills, and enterprise project copy to emphasize technical project leadership, stakeholder management, executive presentations, financial analytics, and enterprise reporting; broadly applicable, not CSX-specific.
+Authorized scope: index.html copy only; design, layout, links, and independent projects (including Golf with Jet) preserved.
+Publication: explicitly authorized by Jet (merge + deploy, 2026-10-15 11:13 PM ET, relayed by Grok Bot): https://github.com/hjharding18-alt/jet-portfolio/pull/3#issuecomment-6207486300
+Acceptance criteria: Only verified facts; no dollar or data-volume figures, internal project names, or direct-report management claims; checks pass.
+Result: PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (reviewed head 4bab4ae); merge and deploy in progress. Checks: HTML parse OK; headless Chrome at 1440px/390px, no horizontal overflow, screenshots reviewed (docs/screenshots/port-003-*.png); axe-core 0 violations; 3 panels toggle via click/Enter/Space; all anchors resolve. Metrics and internal names omitted pending Jet's public-disclosure confirmation.
+Blocker or next action: Jet review of PR and decision on flagged metrics.
+
 ## Task template
 
 ID:
