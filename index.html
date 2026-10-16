@@ -168,6 +168,30 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 .ent-sec,.gwj-sec,.how{padding:72px 0}.cbox{padding:34px 24px}.skillmap div,.layers div{grid-template-columns:1fr}.shots2 .swatch{max-width:280px}}
 main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom:72px}.xp-sec{padding-top:96px}.xp-sec .xp{margin-top:0}
 @media(max-width:720px){.how#how{padding-bottom:56px}.xp-sec{padding-top:64px}}
+/* light palette */
+.lt{--fg:#1d2925;--mut:#47534d;--line:rgba(29,41,37,.14);--acc:#2c5a4c;--bg2:rgba(255,255,255,.6);color:var(--fg)}
+.toolkit{background:#E9E2D5;padding:56px 0}
+.toolkit .chips span{color:#1d2925;border-color:rgba(29,41,37,.22);background:rgba(255,255,255,.45)}
+.toolkit .eyebrow,.xp-sec>.wrap>.eyebrow{color:#2c5a4c}
+.how#how{background:#F7F4EC;padding:88px 0;border-top:1px solid rgba(29,41,37,.08)}
+.how#how .prin{background:rgba(29,41,37,.12);border-color:rgba(29,41,37,.12)}
+.how#how .prin div{background:#fffdf8}
+.bridge{background:#263C36;padding:72px 0;color:#f1efe8}
+.bridge-box{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14)}
+.bridge-box .eyebrow{color:#a9d8c4}
+.bridge .btn{border-color:rgba(255,255,255,.3)}.bridge .btn.pri{background:#f7f4ec;color:#1d2925;border-color:#f7f4ec}
+.projects{background:#E7EBE8;padding:96px 0 40px}
+.projects .door.ent{background:#fbfaf6;border:1px solid rgba(29,41,37,.12)}
+.ent-sec{background:#E7EBE8;padding-top:56px}
+.ent-sec .case,.ent-sec .card{background:#fbfaf6;border-color:#d3dad6}
+.ent-sec .case-top,.ent-sec .flow,.ent-sec .case-grid section{border-color:#d3dad6}
+.ent-sec .flow{background:#f1f3f0}
+.gwj-sec{background:radial-gradient(1200px 600px at 80% 0,#1f4a3c,transparent 60%),#18352D}
+.xp-sec{background:#F3EDE2;padding:88px 0}
+.xp-sec .xp{grid-template-columns:1fr;margin-top:16px;max-width:880px}
+.xp-sec .job{border-color:rgba(29,41,37,.14)}
+.contact{background:var(--bg)}
+@media(max-width:720px){.toolkit{padding:40px 0}.how#how,.xp-sec{padding:64px 0}.bridge{padding:48px 0}.projects{padding:64px 0 24px}.ent-sec{padding-top:40px}}
 @media print{.top,.cta{display:none}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -176,7 +200,7 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <header class="top"><div class="wrap">
 <a class="brand" href="#main">JET HARDING<b>.</b></a>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr">Menu</span><span class="bars" aria-hidden="true"></span></button>
-<nav id="site-nav" aria-label="Primary"><a href="#how">How I work</a><a href="#projects">Projects</a><a href="#enterprise">Enterprise</a><a href="#golf">Golf With Jet</a><a href="#experience">Experience</a><a href="#contact">Connect</a></nav>
+<nav id="site-nav" aria-label="Primary"><a href="#toolkit">Toolkit</a><a href="#how">How I work</a><a href="#projects">Projects</a><a href="#enterprise">Enterprise</a><a href="#golf">Golf With Jet</a><a href="#experience">Experience</a><a href="#contact">Connect</a></nav>
 </div></header>
 <main id="main">
 <section class="hero"><div class="wrap">
@@ -187,7 +211,10 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <div class="facts rv"><div><b>10 years</b><span>Enterprise analytics &amp; financial reporting</span></div><div><b>SQL + BI</b><span>SQL Server, Power BI, DAX, semantic models</span></div><div><b>MBA + MS</b><span>Business &amp; applied analytics</span></div><div><b>Technical Lead</b><span>Enterprise analytics &amp; cross-functional delivery</span></div></div>
 </div></section>
 
-<section class="how" id="how" aria-labelledby="h-h"><div class="wrap">
+<section class="toolkit lt" id="toolkit" aria-label="Technical toolkit"><div class="wrap">
+<div class="rv"><span class="eyebrow">Toolkit</span><div class="chips" style="margin-top:16px"><span>SQL Server / SSMS</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Azure Synapse</span><span>Microsoft Fabric</span><span>Tableau</span><span>Excel</span><span>Semantic modeling</span><span>Dimensional modeling</span><span>ETL</span><span>Data warehousing</span><span>TypeScript</span><span>React</span><span>Postgres</span><span>Cloudflare Workers</span></div></div>
+</div></section>
+<section class="how lt" id="how" aria-labelledby="h-h"><div class="wrap">
 <div class="sec-head rv"><div><span class="eyebrow">How I work</span><h2 id="h-h">Own the question. Understand the answer.</h2></div><p>Technical project leadership starts with clear requirements, honest trade-offs and shared understanding across business and technical teams.</p></div>
 <div class="prin rv">
 <div><b>01</b><h3>Stakeholders in the loop</h3><p>I established and lead recurring stakeholder meetings for requirements, priorities, status and technical challenges, and present updates to directors and executive leadership.</p></div>
@@ -199,7 +226,7 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <p class="eyebrow">Next</p><h2 id="br-h">See how that plays out in real work.</h2>
 <div class="cta"><a class="btn pri" href="#projects">Explore My Projects ↓</a><a class="btn" href="#contact">Let's Connect →</a></div>
 </div></div></section>
-<section class="projects" id="projects" aria-labelledby="p-h"><div class="wrap">
+<section class="projects lt" id="projects" aria-labelledby="p-h"><div class="wrap">
 <div class="sec-head rv"><div><span class="eyebrow">Selected projects</span><h2 id="p-h">Two kinds of work, one approach.</h2></div><p>Enterprise analytics delivered inside a large organization, and an independent product I own end to end.</p></div>
 <div class="split proj-split">
 <a class="door ent rv" href="#enterprise"><span class="eyebrow">A · Enterprise Analytics &amp; Engineering</span><h2>Retail analytics modernization</h2><p>Technical project lead and primary BI developer. Delivered to users in 2026.</p><span class="arr" aria-hidden="true">→</span></a>
@@ -304,9 +331,9 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 </div></section>
 
 
-<section class="how xp-sec" id="experience" aria-label="Experience"><div class="wrap">
+<section class="how xp-sec lt" id="experience" aria-label="Experience"><div class="wrap">
+<span class="eyebrow">Experience</span>
 <div class="xp">
-<div class="rv"><span class="eyebrow">Toolkit</span><div class="chips" style="margin-top:16px"><span>SQL Server / SSMS</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Azure Synapse</span><span>Microsoft Fabric</span><span>Tableau</span><span>Excel</span><span>Semantic modeling</span><span>Dimensional modeling</span><span>ETL</span><span>Data warehousing</span><span>TypeScript</span><span>React</span><span>Postgres</span><span>Cloudflare Workers</span></div></div>
 <div class="rv">
 <div class="job"><span class="d">2018 – PRESENT · SWISHER INTERNATIONAL</span><h3>Senior Software Developer</h3><ul>
 <li>Develop and support enterprise data and reporting solutions across finance, operations, sales, marketing, manufacturing and distribution.</li>
