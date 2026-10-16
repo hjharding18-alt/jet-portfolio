@@ -62,11 +62,12 @@ Authorized by Jet on October 15, 2026; starts October 16, 2026.
 PR #1: https://github.com/hjharding18-alt/jet-portfolio/pull/1
 Reviewed head: ecc487d1146c1531e2794800dde9912d35a3dc1c
 ChatGPT source review: no blocking findings; two expected text substitutions and management status updates only. Browser screenshots not independently inspected. Await Jet's merge/deployment approval. Do not repeat PORT-001 or PORT-002.
+Merged 2026-10-15 ~8:36 PM ET as 46552d1 and deployed (61b25d1b) under Jet's approval: https://github.com/hjharding18-alt/jet-portfolio/pull/1#issuecomment-6205269018
 
 ## Work queue
 
 ### PORT-001 — Clarify Swisher tenure
-Status: IN_PROGRESS
+Status: DONE
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-10-16T00:20Z
 Branch: port-001-002-tenure-uat
@@ -74,10 +75,10 @@ Publication: explicitly authorized by Jet (merge + deploy, 2026-10-15 8:33 PM ET
 Requested outcome: Make the current title distinct from company tenure without asserting an unsupported title date.
 Change: Keep "2018–present · Swisher International" and label the role "Current role: Senior Software Developer." Do not add 2024 as a precise role start date until Jet confirms it for publication.
 Acceptance: The page no longer implies that Senior Software Developer was held continuously since 2018; other career facts and design remain intact.
-Result: Implemented in PR #1 (https://github.com/hjharding18-alt/jet-portfolio/pull/1); merge and deployment in progress.
+Result: DONE. PR #1 https://github.com/hjharding18-alt/jet-portfolio/pull/1 merged as 46552d13b13fa8246155f9b13feadfe33011cc5f. Deployed manually with wrangler 3.114.17 to existing Pages project jet-portfolio (production, branch main): deployment 61b25d1b-0fd3-4498-8ca2-3636e04f0634 (https://61b25d1b.jet-portfolio.pages.dev). Live checks on https://jet-portfolio.pages.dev/ (headless Chrome, 2026-10-16 UTC): new text present, old drafting text absent; no horizontal overflow at 1440px or 390px and screenshots visually reviewed; axe-core 0 violations; all 3 panels open/close via click, Enter and Space; all in-page anchors resolve. Limitations: automated headless testing only, no physical mobile device.
 
 ### PORT-002 — Remove drafting language from retail project
-Status: IN_PROGRESS
+Status: DONE
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-10-16T00:20Z
 Branch: port-001-002-tenure-uat
@@ -85,7 +86,7 @@ Publication: explicitly authorized by Jet (merge + deploy, 2026-10-15 8:33 PM ET
 Change: Replace "The original project summary described this work as in UAT." with "Status: User acceptance testing (UAT), as of October 2026." Preserve the surrounding validation description.
 Basis: Jet approved the existing panel and its UAT status on October 15, 2026.
 Acceptance: No reference to an original draft remains; the status is dated and clear.
-Result: Implemented in PR #1 (https://github.com/hjharding18-alt/jet-portfolio/pull/1); merge and deployment in progress.
+Result: DONE. PR #1 https://github.com/hjharding18-alt/jet-portfolio/pull/1 merged as 46552d13b13fa8246155f9b13feadfe33011cc5f. Deployed manually with wrangler 3.114.17 to existing Pages project jet-portfolio (production, branch main): deployment 61b25d1b-0fd3-4498-8ca2-3636e04f0634 (https://61b25d1b.jet-portfolio.pages.dev). Live checks on https://jet-portfolio.pages.dev/ (headless Chrome, 2026-10-16 UTC): new text present, old drafting text absent; no horizontal overflow at 1440px or 390px and screenshots visually reviewed; axe-core 0 violations; all 3 panels open/close via click, Enter and Space; all in-page anchors resolve. Limitations: automated headless testing only, no physical mobile device.
 
 ## Task template
 
@@ -105,3 +106,4 @@ Blocker or next action:
 
 - 2026-10-15: ChatGPT verified repository access, source HTML, headshot file presence, and removal of noindex. Browser appearance and current Cloudflare deployment were not independently verified by ChatGPT.
 - 2026-10-15: Shared management file and bot setup instructions created. Grok bot creation remains pending; no automated file watcher is configured.
+- 2026-10-16 (UTC): Jet Portfolio Manager merged PR #1 (46552d1) and deployed PORT-001/002 to jet-portfolio production (deployment 61b25d1b) under Jet's recorded approval; live verification passed.
