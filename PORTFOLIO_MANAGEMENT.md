@@ -47,7 +47,7 @@ Career application research or drafting may be proposed separately. Sending recr
 ## Work queue
 
 ### PORT-001 — Clarify Swisher tenure
-Status: IN_PROGRESS
+Status: IMPLEMENTED_AWAITING_REVIEW
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-10-16T00:20Z
 Branch: port-001-002-tenure-uat
@@ -55,10 +55,10 @@ Publication: PR review required
 Requested outcome: Make the current title distinct from company tenure without asserting an unsupported title date.
 Change: Keep "2018–present · Swisher International" and label the role "Current role: Senior Software Developer." Do not add 2024 as a precise role start date until Jet confirms it for publication.
 Acceptance: The page no longer implies that Senior Software Developer was held continuously since 2018; other career facts and design remain intact.
-Result: pending
+Result: Implemented in commit 4652348 on branch port-001-002-tenure-uat (PR linked in PR description). Checks: HTML parse OK; headless Chrome render at 1440px and 390px; DOM confirms new text; no other content changed. Not run: axe-core, interactive keyboard test, live deploy. Not merged or deployed; PR review required.
 
 ### PORT-002 — Remove drafting language from retail project
-Status: IN_PROGRESS
+Status: IMPLEMENTED_AWAITING_REVIEW
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-10-16T00:20Z
 Branch: port-001-002-tenure-uat
@@ -66,7 +66,7 @@ Publication: PR review required
 Change: Replace "The original project summary described this work as in UAT." with "Status: User acceptance testing (UAT), as of October 2026." Preserve the surrounding validation description.
 Basis: Jet approved the existing panel and its UAT status on October 15, 2026.
 Acceptance: No reference to an original draft remains; the status is dated and clear.
-Result: pending
+Result: Implemented in commit 4652348 on branch port-001-002-tenure-uat (PR linked in PR description). Checks: HTML parse OK; headless Chrome render at 1440px and 390px; DOM confirms new text; no other content changed. Not run: axe-core, interactive keyboard test, live deploy. Not merged or deployed; PR review required.
 
 ## Task template
 
@@ -86,3 +86,4 @@ Blocker or next action:
 
 - 2026-10-15: ChatGPT verified repository access, source HTML, headshot file presence, and removal of noindex. Browser appearance and current Cloudflare deployment were not independently verified by ChatGPT.
 - 2026-10-15: Shared management file and bot setup instructions created. Grok bot creation remains pending; no automated file watcher is configured.
+- 2026-10-16: Jet Portfolio Manager implemented PORT-001 and PORT-002 on branch port-001-002-tenure-uat; awaiting PR review. No GitHub deployments or Cloudflare checks are linked to the repository, so a push is not expected to update the live site.
