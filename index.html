@@ -20,10 +20,10 @@ a{color:inherit}img{max-width:100%;display:block;height:auto}
 :focus-visible{outline:3px solid var(--or);outline-offset:3px;border-radius:4px}
 .eyebrow{font:600 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase}
 /* nav */
-.top{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
 .brand{font-weight:800;letter-spacing:-.02em;text-decoration:none}.brand b{color:var(--acc)}
-.top nav{display:flex;gap:22px;font-size:14px}.top nav a{text-decoration:none;color:var(--mut)}.top nav a:hover{color:var(--fg)}
+.top nav{display:flex;gap:22px;font-size:14px}.top nav a{text-decoration:none;color:#b8c0c8}.top nav a:hover{color:var(--fg)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;position:relative}
 .bars,.bars:before,.bars:after{position:absolute;left:12px;width:18px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s}
@@ -166,13 +166,13 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 .case-grid{grid-template-columns:1fr}.case-grid section{border-right:0;border-bottom:1px solid var(--pline)}.case-top,.flow,.note{padding-left:22px;padding-right:22px}.flow .ar{transform:rotate(90deg);padding:6px 0;margin:auto}.flow{flex-direction:column}
 .stage{grid-template-columns:1fr}.stage .phone{max-width:260px;margin:0 auto}.caps{grid-template-columns:1fr}.phases{grid-template-columns:repeat(5,1fr)}
 .ent-sec,.gwj-sec,.how{padding:72px 0}.cbox{padding:34px 24px}.skillmap div,.layers div{grid-template-columns:1fr}.shots2 .swatch{max-width:280px}}
-main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom:72px}.xp-sec{padding-top:96px}.xp-sec .xp{margin-top:0}
+main section[id],.acc-panel [id]{scroll-margin-top:72px}main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom:72px}.xp-sec{padding-top:96px}.xp-sec .xp{margin-top:0}
 @media(max-width:720px){.how#how{padding-bottom:56px}.xp-sec{padding-top:64px}}
 /* light palette */
 .lt{--fg:#1d2925;--mut:#47534d;--line:rgba(29,41,37,.14);--acc:#2c5a4c;--bg2:rgba(255,255,255,.6);color:var(--fg)}
 .toolkit{background:#E9E2D5;padding:56px 0}
 .toolkit .chips span{color:#1d2925;border-color:rgba(29,41,37,.22);background:rgba(255,255,255,.45)}
-.toolkit .eyebrow,.xp-sec>.wrap>.eyebrow{color:#2c5a4c}
+.toolkit .eyebrow,.xp-sec>.wrap>.eyebrow{color:#2c5a4c}.xp-h{margin:0}
 .how#how{background:#F7F4EC;padding:88px 0;border-top:1px solid rgba(29,41,37,.08)}
 .how#how .prin{background:rgba(29,41,37,.12);border-color:rgba(29,41,37,.12)}
 .how#how .prin div{background:#fffdf8}
@@ -192,6 +192,42 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 .xp-sec .job{border-color:rgba(29,41,37,.14)}
 .contact{background:var(--bg)}
 @media(max-width:720px){.toolkit{padding:40px 0}.how#how,.xp-sec{padding:64px 0}.bridge{padding:48px 0}.projects{padding:64px 0 24px}.ent-sec{padding-top:40px}}
+/* nav dropdown */
+.top nav{align-items:center}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:14px;color:#b8c0c8;background:none;border:0;padding:0;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
+.dd-btn:hover,.dd-btn[aria-expanded=true]{color:var(--fg)}
+.dd-btn .caret{font-size:11px;transition:transform .2s}.dd-btn[aria-expanded=true] .caret{transform:rotate(180deg)}
+.dd-menu{display:none;position:absolute;top:calc(100% + 14px);right:-12px;min-width:210px;list-style:none;margin:0;padding:8px;background:#12151a;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.dd-menu:before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}
+.dd-menu.open{display:block}
+.dd-menu a{display:block;padding:10px 12px;border-radius:8px;color:var(--fg)!important;font-size:14px}
+.dd-menu a:hover,.dd-menu a:focus-visible{background:rgba(255,255,255,.07);text-decoration:none}
+@media(max-width:900px){.menu-btn{display:block}.top nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#0b0d10;border-bottom:1px solid var(--line);padding:8px 16px 16px;max-height:calc(100vh - 64px);overflow:auto}.top nav.open{display:flex}.top nav>a,.dd-btn{padding:14px 4px;font-size:17px;color:var(--fg);border-bottom:1px solid var(--line);width:100%;justify-content:space-between}
+.dd-menu{position:static;box-shadow:none;border:0;border-left:2px solid var(--line);border-radius:0;background:none;margin:4px 0 8px 8px;padding:0 0 0 8px;min-width:0}.dd-menu:before{display:none}.dd-menu a{font-size:16px;padding:12px 8px;color:#cfd5db!important}}
+/* accordions */
+.acc{margin-top:28px;display:grid;gap:10px}
+.acc-label{font:600 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px}
+.acc-item{border-radius:16px;border:1px solid}
+.acc-h{margin:0;font:inherit}
+.acc-btn{all:unset;box-sizing:border-box;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;column-gap:16px;width:100%;padding:20px 24px;cursor:pointer;border-radius:16px}
+.acc-btn:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.acc-t{font:400 22px/1.25 var(--serif)}.acc-s{grid-row:2;font-size:14px;margin-top:4px}
+.acc-i{grid-row:1/3;grid-column:2;align-self:center;width:32px;height:32px;border-radius:50%;border:1px solid;position:relative}
+.acc-i:before,.acc-i:after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:currentColor;transition:transform .25s}
+.acc-i:after{transform:rotate(90deg)}.acc-btn[aria-expanded=true] .acc-i:after{transform:rotate(0)}
+.acc-panel{overflow:hidden;transition:height .32s cubic-bezier(.2,.7,.2,1)}
+.acc-inner{padding:4px 24px 24px}
+.ent-sec .acc-label{color:var(--steel)}.ent-sec .acc-item{border-color:#d3dad6;background:#fbfaf6}.ent-sec .acc-s{color:var(--inkm)}.ent-sec .acc-i{border-color:#b9c6d6;color:var(--steel)}
+.ent-sec .acc-inner .card{border:0;background:transparent;padding:0}
+.gwj-sec .acc-label{color:var(--or)}.gwj-sec .acc-item{border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.04)}.gwj-sec .acc-s{color:#c5d8cb}.gwj-sec .acc-i{border-color:rgba(255,255,255,.3)}
+.gwj-sec .acc-inner .feats,.gwj-sec .acc-inner .shots2{margin-top:8px}.gwj-sec .acc-inner .arch,.gwj-sec .acc-inner .snap{margin-top:14px}
+.hl{list-style:none;padding:0;margin:56px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.hl li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);font-size:15px}
+.xp-sec{border-top:1px solid rgba(29,41,37,.08)}
+@media(max-width:980px){.hl{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.hl{grid-template-columns:1fr;margin-top:40px}.acc-btn{padding:16px 18px}.acc-inner{padding:4px 14px 18px}.acc-t{font-size:19px}}
+@media (prefers-reduced-motion:reduce){.acc-panel,.acc-i:before,.acc-i:after,.dd-btn .caret{transition:none}}
 @media print{.top,.cta{display:none}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -200,10 +236,10 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <header class="top"><div class="wrap">
 <a class="brand" href="#main">JET HARDING<b>.</b></a>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr">Menu</span><span class="bars" aria-hidden="true"></span></button>
-<nav id="site-nav" aria-label="Primary"><a href="#toolkit">Toolkit</a><a href="#how">How I work</a><a href="#projects">Projects</a><a href="#enterprise">Enterprise</a><a href="#golf">Golf With Jet</a><a href="#experience">Experience</a><a href="#contact">Connect</a></nav>
+<nav id="site-nav" aria-label="Primary"><a href="#home">Home</a><a href="#toolkit">Technical Toolkit</a><a href="#experience">Experience</a><a href="#how">How I Work</a><div class="dd"><button type="button" class="dd-btn" id="dd-btn" aria-expanded="false" aria-controls="dd-menu" aria-haspopup="true">Projects <span class="caret" aria-hidden="true">▾</span></button><ul class="dd-menu" id="dd-menu" aria-labelledby="dd-btn"><li><a href="#enterprise">Enterprise Analytics</a></li><li><a href="#golf">Golf With Jet</a></li></ul></div><a href="#contact">Connect</a></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="wrap">
+<section class="hero" id="home"><div class="wrap">
 <div class="who rv"><img src="assets/jet.webp" width="52" height="52" alt="Portrait of Jet Harding">Jacksonville, FL · Senior Software Developer</div>
 <h1 class="rv">I turn messy business questions into <i>systems people trust.</i></h1>
 <p class="lede rv">Analytics engineer and technical project lead. For a decade I've worked where finance, operations and data meet: <strong>SQL Server, Power BI and semantic models</strong> at enterprise scale by day, and <strong>Golf With Jet</strong>, a live-scoring product I independently developed and launched.</p>
@@ -213,6 +249,19 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 
 <section class="toolkit lt" id="toolkit" aria-label="Technical toolkit"><div class="wrap">
 <div class="rv"><span class="eyebrow">Toolkit</span><div class="chips" style="margin-top:16px"><span>SQL Server / SSMS</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Azure Synapse</span><span>Microsoft Fabric</span><span>Tableau</span><span>Excel</span><span>Semantic modeling</span><span>Dimensional modeling</span><span>ETL</span><span>Data warehousing</span><span>TypeScript</span><span>React</span><span>Postgres</span><span>Cloudflare Workers</span></div></div>
+</div></section>
+<section class="how xp-sec lt" id="experience" aria-label="Experience"><div class="wrap">
+<h2 class="eyebrow xp-h">Experience</h2>
+<div class="xp">
+<div class="rv">
+<div class="job"><span class="d">2018 – PRESENT · SWISHER INTERNATIONAL</span><h3>Senior Software Developer</h3><ul>
+<li>Develop and support enterprise data and reporting solutions across finance, operations, sales, marketing, manufacturing and distribution.</li>
+<li>Technical project lead and primary BI developer for an enterprise retail analytics solution delivered to users in 2026.</li>
+<li>Present reporting updates to directors and executive leadership; coordinate production and business approval for supply chain reporting.</li>
+<li>Build Power BI reporting end to end; design and validate financial plan allocation and reconciliation; contribute to an Azure Synapse to Microsoft Fabric modernization.</li></ul></div>
+<div class="job"><span class="d">2016 – 2018 · BAKER DISTRIBUTING</span><h3>Pricing Analyst</h3><p>Pricing, financial and distribution analytics for an HVAC and refrigeration distributor; analyzed pricing and sales performance and communicated findings to stakeholders.</p></div>
+<div class="job"><span class="d">JACKSONVILLE UNIVERSITY</span><h3>MBA &amp; MS, Applied Business Analytics</h3><p>2021–2023 · BBA 2012–2016 · NCAA Division I Men's Lacrosse · Dean's Honor Roll</p></div>
+</div></div>
 </div></section>
 <section class="how lt" id="how" aria-labelledby="h-h"><div class="wrap">
 <div class="sec-head rv"><div><span class="eyebrow">How I work</span><h2 id="h-h">Own the question. Understand the answer.</h2></div><p>Technical project leadership starts with clear requirements, honest trade-offs and shared understanding across business and technical teams.</p></div>
@@ -254,20 +303,17 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <p class="note">Conceptual flow, not internal architecture. A generalized description of professional experience, not a reproduction of an employer's dashboard. Release to users does not imply all post-launch improvements are complete.</p>
 </article>
 
-<div class="ent-more">
-<article class="card rv"><span class="eyebrow">Case study 02 · Methodology</span><h3>Operating-plan allocation</h3>
+<div class="acc" data-acc="ent"><p class="acc-label">Explore details</p><div class="acc-item"><h3 class="acc-h"><button type="button" class="acc-btn" id="ent-b1" aria-expanded="false" aria-controls="ent-p1"><span class="acc-t">Case study 02 · Operating-plan allocation</span><span class="acc-s">Methodology, validation and tools</span><span class="acc-i" aria-hidden="true"></span></button></h3><div class="acc-panel" id="ent-p1" role="region" aria-labelledby="ent-b1" hidden><div class="acc-inner"><article class="card"><span class="eyebrow">Case study 02 · Methodology</span><h3>Operating-plan allocation</h3>
 <p><b>Challenge.</b> Regional and territory reporting doesn't always give the detail needed to understand a plan at the customer level.</p>
 <p><b>My contribution.</b> Designed and validated an allocation methodology connecting SKU-level plans with customer-level analysis, reconciled allocated results back to source plan values, and identified gaps in prior allocation logic.</p>
 <p><b>Validation.</b> Allocated totals reconcile to source plans, assumptions stay visible, exceptions get reviewed.</p>
-<div class="tags"><span>SQL</span><span>Financial analytics</span><span>Forecasting</span><span>Reconciliation</span></div></article>
-<article class="card rv"><span class="eyebrow">Capability map</span><h3>Where I add value</h3>
+<div class="tags"><span>SQL</span><span>Financial analytics</span><span>Forecasting</span><span>Reconciliation</span></div></article></div></div></div><div class="acc-item"><h3 class="acc-h"><button type="button" class="acc-btn" id="ent-b2" aria-expanded="false" aria-controls="ent-p2"><span class="acc-t">Capability map · Where I add value</span><span class="acc-s">Data foundation, reporting, finance, delivery</span><span class="acc-i" aria-hidden="true"></span></button></h3><div class="acc-panel" id="ent-p2" role="region" aria-labelledby="ent-b2" hidden><div class="acc-inner"><article class="card"><span class="eyebrow">Capability map</span><h3>Where I add value</h3>
 <div class="skillmap">
 <div><b>Data foundation</b><span>SQL Server, stored procedures, ETL, dimensional &amp; semantic modeling, Azure Synapse → Microsoft Fabric modernization</span></div>
 <div><b>Reporting</b><span>Power BI end to end, DAX, Power Query, Tableau, Excel</span></div>
 <div><b>Finance</b><span>Plan allocation, reconciliation, pricing analytics</span></div>
 <div><b>Delivery</b><span>Requirements, prioritization, executive updates, cross-functional coordination</span></div>
-</div></article>
-</div>
+</div></article></div></div></div></div>
 </div></section>
 
 <section class="gwj-sec" id="golf" aria-labelledby="g-h"><div class="wrap">
@@ -279,41 +325,42 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <figure><div class="laptop"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/gwj/leaderboard-desktop.webp" width="1424" height="890" alt="Live leaderboard for the Portfolio Demo Classic on desktop, showing projected finish, holes played and trend for each player" loading="lazy" decoding="async"></div><div class="base" aria-hidden="true"></div><figcaption class="cap">Live leaderboard, desktop. Demo tournament with fictional players.</figcaption></figure>
 <figure><div class="phone"><img src="assets/gwj/gps-mobile.webp" width="390" height="844" alt="Live round on hole 6 showing 200 front, 214 center and 229 back yards to the green, with score buttons" loading="lazy" decoding="async"></div><figcaption class="cap">On-course GPS yardages, mobile.</figcaption></figure>
 </div>
-<div class="feats">
-<article class="feat rv"><div class="ftxt"><span class="fnum">01</span><h3>Tournament creation &amp; management <span class="badge b-ok">Built</span></h3><p>Name it, pick a saved course, round length, team size, format, tees and handicap rules, then share a short join code. Admins manage rosters, teams, tee times, co-admins and a printable scorecard. Only approved accounts can create tournaments, and the database enforces it.</p></div><div class="fmed"><div class="laptop"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/gwj/course-setup-desktop.webp" width="1424" height="890" alt="Tournament edit screen with course setup, tee selection and an 18-hole scorecard preview of par, handicap and yardage" loading="lazy" decoding="async"></div><div class="base" aria-hidden="true"></div></div></article>
+<ul class="hl" aria-label="Key highlights"><li><span>Tournament creation &amp; management</span><span class="badge b-ok">Built</span></li><li><span>Scoring formats</span><span class="badge b-ok">Built</span></li><li><span>Live leaderboards</span><span class="badge b-ok">Built</span></li><li><span>Interactive course maps</span><span class="badge b-ok">Built</span></li><li><span>Authentication &amp; roles</span><span class="badge b-wip">Validating</span></li><li><span>Offline &amp; installable</span><span class="badge b-wip">Partial</span></li></ul>
+<div class="acc" data-acc="gwj"><p class="acc-label">Explore details</p><div class="acc-item"><h3 class="acc-h"><button type="button" class="acc-btn" id="gwj-b1" aria-expanded="false" aria-controls="gwj-p1"><span class="acc-t">Feature walkthrough</span><span class="acc-s">Six features with real screenshots</span><span class="acc-i" aria-hidden="true"></span></button></h3><div class="acc-panel" id="gwj-p1" role="region" aria-labelledby="gwj-b1" hidden><div class="acc-inner"><div class="feats">
+<article class="feat"><div class="ftxt"><span class="fnum">01</span><h3>Tournament creation &amp; management <span class="badge b-ok">Built</span></h3><p>Name it, pick a saved course, round length, team size, format, tees and handicap rules, then share a short join code. Admins manage rosters, teams, tee times, co-admins and a printable scorecard. Only approved accounts can create tournaments, and the database enforces it.</p></div><div class="fmed"><div class="laptop"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/gwj/course-setup-desktop.webp" width="1424" height="890" alt="Tournament edit screen with course setup, tee selection and an 18-hole scorecard preview of par, handicap and yardage" loading="lazy" decoding="async"></div><div class="base" aria-hidden="true"></div></div></article>
 
-<article class="feat rv flip"><div class="ftxt"><span class="fnum">02</span><h3>Scoring formats <span class="badge b-ok">Built</span></h3><p>Six formats: stroke play, scramble, Texas scramble, best ball, net best ball and Stableford. Optional handicaps with 2, 3 and 4-player team formulas, skins with carryovers, and a Drink Handicap side game for the fun rounds.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/create-mobile.webp" width="390" height="844" alt="Create tournament form on mobile listing the six scoring formats and team size options" loading="lazy" decoding="async"></div></div></article>
+<article class="feat flip"><div class="ftxt"><span class="fnum">02</span><h3>Scoring formats <span class="badge b-ok">Built</span></h3><p>Six formats: stroke play, scramble, Texas scramble, best ball, net best ball and Stableford. Optional handicaps with 2, 3 and 4-player team formulas, skins with carryovers, and a Drink Handicap side game for the fun rounds.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/create-mobile.webp" width="390" height="844" alt="Create tournament form on mobile listing the six scoring formats and team size options" loading="lazy" decoding="async"></div></div></article>
 
-<article class="feat rv"><div class="ftxt"><span class="fnum">03</span><h3>Live leaderboards <span class="badge b-ok">Built</span></h3><p>Everyone enters their own scores on their phone and the board updates in real time. Format-aware totals, projected finish, live versus final boards, and a submit, review and verify flow before results are final.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/leaderboard-mobile.webp" width="390" height="844" alt="Mobile live leaderboard listing players with holes played, score and projected finish" loading="lazy" decoding="async"></div></div></article>
+<article class="feat"><div class="ftxt"><span class="fnum">03</span><h3>Live leaderboards <span class="badge b-ok">Built</span></h3><p>Everyone enters their own scores on their phone and the board updates in real time. Format-aware totals, projected finish, live versus final boards, and a submit, review and verify flow before results are final.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/leaderboard-mobile.webp" width="390" height="844" alt="Mobile live leaderboard listing players with holes played, score and projected finish" loading="lazy" decoding="async"></div></div></article>
 
-<article class="feat rv flip"><div class="ftxt"><span class="fnum">04</span><h3>Interactive course maps <span class="badge b-ok">Built</span></h3><p>MapLibre maps on satellite or street basemaps with tees, greens, bunkers and water, plus live front, center and back yardages from your location, shot tracking and a recenter control. Course geometry comes from cited sources such as OpenStreetMap.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/map-mobile.webp" width="390" height="844" alt="Satellite course map of a hole with tee, green and hazard markers and map controls" loading="lazy" decoding="async"></div></div></article>
+<article class="feat flip"><div class="ftxt"><span class="fnum">04</span><h3>Interactive course maps <span class="badge b-ok">Built</span></h3><p>MapLibre maps on satellite or street basemaps with tees, greens, bunkers and water, plus live front, center and back yardages from your location, shot tracking and a recenter control. Course geometry comes from cited sources such as OpenStreetMap.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/map-mobile.webp" width="390" height="844" alt="Satellite course map of a hole with tee, green and hazard markers and map controls" loading="lazy" decoding="async"></div></div></article>
 
-<article class="feat rv"><div class="ftxt"><span class="fnum">05</span><h3>Authentication &amp; roles <span class="badge b-wip">Validating</span></h3><p>Passwordless magic link and Google sign-in. Owner, co-admin and player roles plus app admin roles, all enforced with Postgres row-level security and server-side functions. Signed-in role testing is part of Phase 9.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/signin-mobile.webp" width="390" height="844" alt="Golf With Jet mobile sign-in screen with Continue with Google and magic link options" loading="lazy" decoding="async"></div></div></article>
+<article class="feat"><div class="ftxt"><span class="fnum">05</span><h3>Authentication &amp; roles <span class="badge b-wip">Validating</span></h3><p>Passwordless magic link and Google sign-in. Owner, co-admin and player roles plus app admin roles, all enforced with Postgres row-level security and server-side functions. Signed-in role testing is part of Phase 9.</p></div><div class="fmed"><div class="phone"><img src="assets/gwj/signin-mobile.webp" width="390" height="844" alt="Golf With Jet mobile sign-in screen with Continue with Google and magic link options" loading="lazy" decoding="async"></div></div></article>
 
-<article class="feat rv flip"><div class="ftxt"><span class="fnum">06</span><h3>Offline &amp; installable <span class="badge b-wip">Partial</span></h3><p>Installable as a home-screen app. Scores entered without signal are queued on the device and sync when the connection returns, with a visible sync status. Full offline loading and conflict resolution are on the roadmap.</p></div><div class="fmed"><div class="offline"><span class="chip ok">● Synced</span><span class="chip q">◌ Scores queued</span><span class="chip">↻ Syncs when back online</span><p>Example sync states, drawn in HTML for illustration (not a screenshot).</p></div></div></article>
+<article class="feat flip"><div class="ftxt"><span class="fnum">06</span><h3>Offline &amp; installable <span class="badge b-wip">Partial</span></h3><p>Installable as a home-screen app. Scores entered without signal are queued on the device and sync when the connection returns, with a visible sync status. Full offline loading and conflict resolution are on the roadmap.</p></div><div class="fmed"><div class="offline"><span class="chip ok">● Synced</span><span class="chip q">◌ Scores queued</span><span class="chip">↻ Syncs when back online</span><p>Example sync states, drawn in HTML for illustration (not a screenshot).</p></div></div></article>
 </div>
-<div class="prog rv"><h3>Platform rebuild progress</h3><p>Moving the product to infrastructure I own end to end. Phases 1 to 8 are merged; Phase 9 is signed-in testing before cutover.</p>
-<div class="phases" role="img" aria-label="Rebuild phases: 1 through 8 complete, 9 in testing, 10 planned">
-<div class="ph done">1</div><div class="ph done">2</div><div class="ph done">3</div><div class="ph done">4</div><div class="ph done">5</div><div class="ph done">6</div><div class="ph done">7</div><div class="ph done">8</div><div class="ph now">9</div><div class="ph">10</div></div>
-<div class="legend"><span><i style="background:#11643f"></i>Merged</span><span><i style="background:#f28a1a"></i>Testing now</span><span><i style="background:rgba(255,255,255,.2)"></i>Planned: production cutover</span></div></div>
-
-
-<div class="arch">
-<div class="archbox rv"><h3>Architecture, at a glance</h3><div class="layers">
+</div></div></div><div class="acc-item"><h3 class="acc-h"><button type="button" class="acc-btn" id="gwj-b2" aria-expanded="false" aria-controls="gwj-p2"><span class="acc-t">Architecture &amp; approach</span><span class="acc-s">Stack at a public level, and what it shows</span><span class="acc-i" aria-hidden="true"></span></button></h3><div class="acc-panel" id="gwj-p2" role="region" aria-labelledby="gwj-b2" hidden><div class="acc-inner"><div class="arch">
+<div class="archbox"><h3>Architecture, at a glance</h3><div class="layers">
 <div><b>Client</b><span>React 19 + TanStack Start, Tailwind, installable PWA</span></div>
 <div><b>Edge</b><span>Cloudflare Workers with security headers</span></div>
 <div><b>Data</b><span>Supabase Postgres, Auth and Realtime; row-level security and server-side functions</span></div>
 <div><b>Maps</b><span>MapLibre GL</span></div>
 <div><b>Quality</b><span>Vitest, ESLint, TypeScript checks in CI; Sentry error monitoring with scrubbing</span></div>
 </div></div>
-<div class="archbox role rv"><h3>What it shows about how I work</h3>
+<div class="archbox role"><h3>What it shows about how I work</h3>
 <p><b>Rules into software.</b> Translating golf scoring rules, handicaps and team formats into tested logic.</p>
 <p><b>Security first.</b> Found and closed authorization gaps, then verified them against the live database before moving on.</p>
 <p><b>Real-world feedback.</b> Field-tested in live rounds; bugs found on the course became phases with regression tests.</p>
 <p><b>Coordinating contributors.</b> Directing AI-assisted development with written phase plans, reviews and approval gates.</p></div>
 </div>
 
-<div class="snap rv" aria-labelledby="snap-h"><div class="snap-top"><h3 id="snap-h">By the numbers</h3><span class="snapbadge">Development snapshot · Oct 16, 2026</span></div>
+</div></div></div><div class="acc-item"><h3 class="acc-h"><button type="button" class="acc-btn" id="gwj-b3" aria-expanded="false" aria-controls="gwj-p3"><span class="acc-t">Development progress &amp; testing</span><span class="acc-s">Rebuild phases, snapshot numbers, test results</span><span class="acc-i" aria-hidden="true"></span></button></h3><div class="acc-panel" id="gwj-p3" role="region" aria-labelledby="gwj-b3" hidden><div class="acc-inner"><div class="prog"><h3>Platform rebuild progress</h3><p>Moving the product to infrastructure I own end to end. Phases 1 to 8 are merged; Phase 9 is signed-in testing before cutover.</p>
+<div class="phases" role="img" aria-label="Rebuild phases: 1 through 8 complete, 9 in testing, 10 planned">
+<div class="ph done">1</div><div class="ph done">2</div><div class="ph done">3</div><div class="ph done">4</div><div class="ph done">5</div><div class="ph done">6</div><div class="ph done">7</div><div class="ph done">8</div><div class="ph now">9</div><div class="ph">10</div></div>
+<div class="legend"><span><i style="background:#11643f"></i>Merged</span><span><i style="background:#f28a1a"></i>Testing now</span><span><i style="background:rgba(255,255,255,.2)"></i>Planned: production cutover</span></div></div>
+
+
+<div class="snap" aria-labelledby="snap-h"><div class="snap-top"><h3 id="snap-h">By the numbers</h3><span class="snapbadge">Development snapshot · Oct 16, 2026</span></div>
 <dl class="mini">
 <div><dt>1,174</dt><dd>automated tests passing</dd></div>
 <div><dt>97</dt><dd>database migrations</dd></div>
@@ -323,27 +370,15 @@ main section[id]{scroll-margin-top:64px}.how#how{padding-top:72px;padding-bottom
 <div><dt>1,966</dt><dd>commits since July 2026</dd></div>
 <div><dt>21</dt><dd>rebuild pull requests merged</dd></div>
 </dl><p class="snapnote">Counted from the project repository. Full test suite run on Oct 16, 2026: 1,174 passed, 46 skipped, 0 failed.</p></div>
-<div class="shots2">
-<div class="swatch rv"><img src="assets/gwj/design-system.webp" width="480" height="470" alt="Golf With Jet design system page showing eagle, birdie, par, bogey and double bogey score marks and a high-contrast on-course surface" loading="lazy" decoding="async"></div>
-<div class="rv"><span class="eyebrow">Designed for the course</span><h3 style="font:400 30px/1.15 var(--serif);margin:10px 0">Readable in direct sunlight.</h3><p style="color:#c5d8cb;max-width:56ch">Score marks follow golf conventions, and the on-course surface targets high contrast for glare. Captured from the app's own design reference page.</p>
+</div></div></div><div class="acc-item"><h3 class="acc-h"><button type="button" class="acc-btn" id="gwj-b4" aria-expanded="false" aria-controls="gwj-p4"><span class="acc-t">Designed for the course</span><span class="acc-s">Design system and screenshot notes</span><span class="acc-i" aria-hidden="true"></span></button></h3><div class="acc-panel" id="gwj-p4" role="region" aria-labelledby="gwj-b4" hidden><div class="acc-inner"><div class="shots2">
+<div class="swatch"><img src="assets/gwj/design-system.webp" width="480" height="470" alt="Golf With Jet design system page showing eagle, birdie, par, bogey and double bogey score marks and a high-contrast on-course surface" loading="lazy" decoding="async"></div>
+<div class=""><span class="eyebrow">Designed for the course</span><h3 style="font:400 30px/1.15 var(--serif);margin:10px 0">Readable in direct sunlight.</h3><p style="color:#c5d8cb;max-width:56ch">Score marks follow golf conventions, and the on-course surface targets high contrast for glare. Captured from the app's own design reference page.</p>
 <p class="gaps">Screenshots are real captures from the staging build, using a demo account, a demo tournament and fictional player names. Nothing is mocked or generated.</p></div>
 </div>
+</div></div></div></div>
 </div></section>
 
 
-<section class="how xp-sec lt" id="experience" aria-label="Experience"><div class="wrap">
-<span class="eyebrow">Experience</span>
-<div class="xp">
-<div class="rv">
-<div class="job"><span class="d">2018 – PRESENT · SWISHER INTERNATIONAL</span><h3>Senior Software Developer</h3><ul>
-<li>Develop and support enterprise data and reporting solutions across finance, operations, sales, marketing, manufacturing and distribution.</li>
-<li>Technical project lead and primary BI developer for an enterprise retail analytics solution delivered to users in 2026.</li>
-<li>Present reporting updates to directors and executive leadership; coordinate production and business approval for supply chain reporting.</li>
-<li>Build Power BI reporting end to end; design and validate financial plan allocation and reconciliation; contribute to an Azure Synapse to Microsoft Fabric modernization.</li></ul></div>
-<div class="job"><span class="d">2016 – 2018 · BAKER DISTRIBUTING</span><h3>Pricing Analyst</h3><p>Pricing, financial and distribution analytics for an HVAC and refrigeration distributor; analyzed pricing and sales performance and communicated findings to stakeholders.</p></div>
-<div class="job"><span class="d">JACKSONVILLE UNIVERSITY</span><h3>MBA &amp; MS, Applied Business Analytics</h3><p>2021–2023 · BBA 2012–2016 · NCAA Division I Men's Lacrosse · Dean's Honor Roll</p></div>
-</div></div>
-</div></section>
 <section class="contact" id="contact"><div class="wrap">
 <div class="cbox rv"><span class="eyebrow" style="color:var(--acc)">Get in touch</span><h2>Let's build something useful.</h2><p>Open to senior analytics engineering, data engineering, software development and technical leadership conversations.</p>
 <div class="cta"><a class="btn pri" href="mailto:Hjharding18@gmail.com">Email Jet ↗</a><a class="btn" href="https://www.linkedin.com/in/halston-jet-harding-4b5ab8ab/">LinkedIn ↗</a></div></div>
@@ -357,11 +392,37 @@ function set(o){b.setAttribute('aria-expanded',o);n.classList.toggle('open',o);b
 b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true');if(n.classList.contains('open'))n.querySelector('a').focus()});
 n.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){set(false);b.focus()}});
-matchMedia('(min-width:721px)').addEventListener('change',function(m){if(m.matches)set(false)})})();
+matchMedia('(min-width:901px)').addEventListener('change',function(m){if(m.matches)set(false)})})();
 (function(){var els=document.querySelectorAll('.rv');
 if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return}
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
 els.forEach(function(e){io.observe(e)})})();
+(function(){var rm=matchMedia('(prefers-reduced-motion: reduce)');
+var b=document.getElementById('dd-btn'),m=document.getElementById('dd-menu'),d=b.parentNode,items=[].slice.call(m.querySelectorAll('a')),fine=matchMedia('(hover:hover) and (pointer:fine) and (min-width:901px)'),t;
+function set(o,f){b.setAttribute('aria-expanded',o);m.classList.toggle('open',o);if(o&&f!=null)items[f].focus()}
+b.addEventListener('click',function(e){if(e.detail>0&&fine.matches){set(true);return}set(b.getAttribute('aria-expanded')!=='true')});
+b.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();set(true,0)}else if(e.key==='ArrowUp'){e.preventDefault();set(true,items.length-1)}});
+m.addEventListener('keydown',function(e){var i=items.indexOf(document.activeElement);if(e.key==='ArrowDown'){e.preventDefault();items[(i+1)%items.length].focus()}else if(e.key==='ArrowUp'){e.preventDefault();items[(i-1+items.length)%items.length].focus()}else if(e.key==='Home'){e.preventDefault();items[0].focus()}else if(e.key==='End'){e.preventDefault();items[items.length-1].focus()}else if(e.key==='Tab'&&fine.matches){set(false)}});
+d.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){e.stopPropagation();set(false);b.focus()}});
+d.addEventListener('mouseenter',function(){if(fine.matches){clearTimeout(t);set(true)}});
+d.addEventListener('mouseleave',function(){if(fine.matches){t=setTimeout(function(){set(false)},180)}});
+m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+document.addEventListener('click',function(e){if(!d.contains(e.target)&&fine.matches)set(false)});
+d.addEventListener('focusout',function(e){if(fine.matches&&!d.contains(e.relatedTarget))set(false)});
+/* accordions */
+function hide(p,h){if(h)p.setAttribute('hidden','until-found');else p.removeAttribute('hidden')}
+function anim(p,open){var h;if(rm.matches){hide(p,!open);p.style.height='';return}
+ if(open){hide(p,false);h=p.scrollHeight;p.style.height='0px';p.offsetHeight;p.style.height=h+'px'}
+ else{p.style.height=p.scrollHeight+'px';p.offsetHeight;p.style.height='0px'}
+ var done=function(e){if(e.target!==p)return;p.removeEventListener('transitionend',done);if(open){p.style.height=''}else{hide(p,true);p.style.height=''}};p.addEventListener('transitionend',done)}
+function toggle(btn,open,instant){var p=document.getElementById(btn.getAttribute('aria-controls'));if((btn.getAttribute('aria-expanded')==='true')===open)return;
+ if(open){[].forEach.call(btn.closest('.acc').querySelectorAll('.acc-btn[aria-expanded=true]'),function(o){toggle(o,false,instant)})}
+ btn.setAttribute('aria-expanded',open);if(instant){hide(p,!open);p.style.height=''}else anim(p,open)}
+[].forEach.call(document.querySelectorAll('.acc-btn'),function(btn){btn.addEventListener('click',function(){toggle(btn,btn.getAttribute('aria-expanded')!=='true')})});
+function reveal(){var h=location.hash&&document.getElementById(location.hash.slice(1));if(!h)return;var p=h.closest('.acc-panel');if(p){toggle(document.getElementById(p.getAttribute('aria-labelledby')),true,true);h.scrollIntoView()}}
+addEventListener('hashchange',reveal);reveal();
+[].forEach.call(document.querySelectorAll('.acc-panel'),function(p){p.setAttribute('hidden','until-found');p.addEventListener('beforematch',function(){toggle(document.getElementById(p.getAttribute('aria-labelledby')),true,true)})});
+})();
 </script>
 </body>
 </html>
