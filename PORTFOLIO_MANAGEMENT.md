@@ -102,7 +102,7 @@ Result: DONE. PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (review
 Blocker or next action: None. Omitted metrics and internal names remain unpublished pending any future approval by Jet.
 
 ### PORT-004 — Content + accessibility audit of live v2
-Status: IN_PROGRESS
+Status: IMPLEMENTED_AWAITING_REVIEW
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-10-19T22:36Z
 Branch: port-004-v2-audit
@@ -111,8 +111,8 @@ Requested outcome: Audit the live v2 site (https://jet-portfolio.pages.dev/) and
 Authorized scope: Case-study copy and Golf With Jet screenshots (assets/gwj/) checked for invented figures, internal company names or confidential numbers, direct-report implications, and Golf With Jet private data (real names, emails, scores, user data); axe audit; layout at 1440px/390px with screenshots; panels; links. Never modify the Golf With Jet repository.
 Publication: PR review required
 Acceptance criteria: PR with pass/fail per check, evidence screenshots, fixes made, and items needing Jet's decision.
-Result: pending
-Blocker or next action:
+Result: Audit PR opened from branch port-004-v2-audit (link in PR list; refs PORT-004). Live site matched main ccef53b index.html. PASS: no dollar figures, confidential numbers, or internal project names (grep); no direct-report or people-management wording; 8 Golf With Jet screenshots viewed: demo account, fictional players, blurred join codes, public course/map data only; axe-core 0 violations at 1440px and 390px; no horizontal overflow; no text under 12px; all 9 images load with alt text; 13 in-page anchors resolve; mobile menu opens and closes (Esc returns focus); mailto present; LinkedIn href unchanged. N/A: no disclosure panels in v2. Evidence: docs/screenshots/port-004-live-1440.png and -390.png. No code fixes made; no clear violations found.
+Blocker or next action: Jet decisions on wording items listed in the PR (performance claim, Technical Lead highlight, primary BI developer, launched vs closed beta).
 
 ## Task template
 
