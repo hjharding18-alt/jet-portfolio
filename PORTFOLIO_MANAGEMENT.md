@@ -102,8 +102,10 @@ Result: DONE. PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (review
 Blocker or next action: None. Omitted metrics and internal names remain unpublished pending any future approval by Jet.
 
 ### PORT-004 — Content + accessibility audit of live v2
-Status: READY
-Owner: unassigned
+Status: IN_PROGRESS
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-10-19T22:36Z
+Branch: port-004-v2-audit
 Source: Direct request from Jet, relayed by Jet Ops, 2026-10-19.
 Requested outcome: Audit the live v2 site (https://jet-portfolio.pages.dev/) and main source against the content rules and accessibility standards; fix clear violations in this repository only.
 Authorized scope: Case-study copy and Golf With Jet screenshots (assets/gwj/) checked for invented figures, internal company names or confidential numbers, direct-report implications, and Golf With Jet private data (real names, emails, scores, user data); axe audit; layout at 1440px/390px with screenshots; panels; links. Never modify the Golf With Jet repository.
