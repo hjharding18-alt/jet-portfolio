@@ -101,6 +101,17 @@ Acceptance criteria: Only verified facts; no dollar or data-volume figures, inte
 Result: DONE. PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (reviewed head 4bab4ae) merged as 5cbd98eb1765000eb3c6bb8012f7f2a7bc5b7d54. Deployed manually with wrangler 3.114.17 to existing Pages project jet-portfolio (production, branch main): deployment de4cfd17-cfaa-43d7-81b6-368784598c9d (https://de4cfd17.jet-portfolio.pages.dev). Live checks on https://jet-portfolio.pages.dev/ (2026-10-16 UTC): served HTML identical to merged index.html; new copy present; no horizontal overflow at 1440px/390px, screenshots reviewed; axe-core 0 violations; 3 panels toggle via click/Enter/Space; all in-page anchors resolve; mailto present; LinkedIn href unchanged (HTTP 301 from LinkedIn, final page not verifiable without sign-in); headshot 200. Grep of live HTML: no dollar signs, omitted figures, internal project names, or management/direct-report wording.
 Blocker or next action: None. Omitted metrics and internal names remain unpublished pending any future approval by Jet.
 
+### PORT-004 — Content + accessibility audit of live v2
+Status: READY
+Owner: unassigned
+Source: Direct request from Jet, relayed by Jet Ops, 2026-10-19.
+Requested outcome: Audit the live v2 site (https://jet-portfolio.pages.dev/) and main source against the content rules and accessibility standards; fix clear violations in this repository only.
+Authorized scope: Case-study copy and Golf With Jet screenshots (assets/gwj/) checked for invented figures, internal company names or confidential numbers, direct-report implications, and Golf With Jet private data (real names, emails, scores, user data); axe audit; layout at 1440px/390px with screenshots; panels; links. Never modify the Golf With Jet repository.
+Publication: PR review required
+Acceptance criteria: PR with pass/fail per check, evidence screenshots, fixes made, and items needing Jet's decision.
+Result: pending
+Blocker or next action:
+
 ## Task template
 
 ID:
@@ -123,3 +134,4 @@ Blocker or next action:
 
 - 2026-10-15 8:38 PM America/New_York: Jet confirmed the live LinkedIn link opens correctly and Jet Portfolio Manager's weekday 6:30 PM routine is confirmed. ChatGPT's 6 PM and 8 PM weekday schedule is configured. No remaining setup blocker is recorded; no new implementation tasks were requested.
 - 2026-10-16 (UTC): Jet Portfolio Manager merged PR #3 (5cbd98e) and deployed PORT-003 to jet-portfolio production (deployment de4cfd17) under Jet's approval (https://github.com/hjharding18-alt/jet-portfolio/pull/3#issuecomment-6207486300); live verification passed; issue #2 closed.
+- 2026-10-19 (retroactive governance note): Jet explicitly approved the merge and deployment of PR #6 (redesign v2) and PR #7 (page flow), relayed by Jet Ops on 2026-10-18 at 9:31 PM America/New_York. Both were already merged and live; this records the approval. No code change.
