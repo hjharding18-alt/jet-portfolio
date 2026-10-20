@@ -102,15 +102,17 @@ Result: DONE. PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (review
 Blocker or next action: None. Omitted metrics and internal names remain unpublished pending any future approval by Jet.
 
 ### PORT-004 — Content + accessibility audit of live v2
-Status: READY
-Owner: unassigned
+Status: IMPLEMENTED_AWAITING_REVIEW
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-10-19T22:36Z
+Branch: port-004-v2-audit
 Source: Direct request from Jet, relayed by Jet Ops, 2026-10-19.
 Requested outcome: Audit the live v2 site (https://jet-portfolio.pages.dev/) and main source against the content rules and accessibility standards; fix clear violations in this repository only.
-Authorized scope: Case-study copy and Golf With Jet screenshots (assets/gwj/) checked for invented figures, internal company names or confidential numbers, direct-report implications, and Golf With Jet private data (real names, emails, scores, user data); axe audit; layout at 1440px/390px with screenshots; panels; links. Never modify the Golf With Jet repository.
+Authorized scope: Re-scoped 2026-10-20 (approved by Jet Ops) to the current live site, including PR #8's Projects dropdown and collapsible sections. Case-study copy and Golf With Jet screenshots (assets/gwj/) checked for invented figures, internal company names or confidential numbers, direct-report implications, and Golf With Jet private data; axe; layout at 1440px/390px with screenshots; dropdown, collapsible sections, mobile menu; anchors; images and alt text; links. Never modify the Golf With Jet repository.
 Publication: PR review required
 Acceptance criteria: PR with pass/fail per check, evidence screenshots, fixes made, and items needing Jet's decision.
-Result: pending
-Blocker or next action:
+Result: PR https://github.com/hjharding18-alt/jet-portfolio/pull/10. Re-audit 2026-10-20 against live site = main d1d4ca7 index.html. PASS: no dollar figures, confidential numbers or internal project names ("900" occurs only as a CSS breakpoint); no direct-report wording; assets/gwj unchanged since prior review (8 screenshots: demo account, fictional players, blurred join codes, public course data); axe-core 0 violations at 1440px and 390px with all sections collapsed and with each of the 6 sections open; no horizontal overflow; all 9 images load with alt text; 14 in-page anchors resolve; no duplicate ids; 6 collapsible sections toggle by click, Enter and Space with correct aria-expanded and focus kept on the trigger (single-open accordion); Projects dropdown toggles by click/Enter/Space, closes on Esc (focus returns), outside click and link selection; mobile menu opens, closes on Esc with focus return and on link selection; mailto present; LinkedIn href unchanged (HTTP 301/999 bot response). Evidence: docs/screenshots/port-004-live-1440.png, -390.png, -390-gwj-b1-open.png. No code fixes; no clear violations found.
+Blocker or next action: Jet decisions on the six wording items in PR #10 (unchanged by PR #8) plus two minor UX notes.
 
 ## Task template
 
