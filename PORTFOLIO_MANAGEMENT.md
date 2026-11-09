@@ -1,8 +1,8 @@
 # Portfolio management
 
-Updated: 2026-10-15
+Updated: 2026-11-09
 Owner: Jet Harding
-Coordinator: ChatGPT / Codex
+Coordinator: Grok Bot (92829d1c) — final. ChatGPT no longer coordinates.
 Implementation bot: Jet Portfolio Manager (created; weekday 6:30 PM America/New_York routine confirmed by Jet on 2026-10-15)
 Repository: https://github.com/hjharding18-alt/jet-portfolio
 Site: https://jet-portfolio.pages.dev/
@@ -47,12 +47,12 @@ Career application research or drafting may be proposed separately. Sending recr
 ## Weekday evening coordination — America/New_York
 
 Authorized by Jet on October 15, 2026; starts October 16, 2026.
-- 6:00 PM: ChatGPT prioritizes Jet's recorded requests and reviews outstanding new PR work.
+- 6:00 PM: Coordinator (Grok Bot) prioritizes Jet's recorded requests and reviews outstanding new PR work.
 - 6:30 PM: Jet Portfolio Manager reads current directions and implements READY tasks. Grok routine is confirmed by Jet as configured (2026-10-15). Scheduler state was not independently inspected by ChatGPT.
-- 8:00 PM: ChatGPT reviews new completed work and reports necessary decisions or blockers.
-- ChatGPT's two runs are configured as one enabled scheduled task.
+- 8:00 PM: Coordinator (Grok Bot) reviews new completed work and reports necessary decisions or blockers.
+- Coordinator review runs remain as configured by Jet; Jet Portfolio Manager implements at 6:30 PM.
 - Check open PRs and task branches before selecting work. A task already represented by a PR is not READY to repeat, even when main's queue has not yet absorbed its status update.
-- ChatGPT owns direction and review notes; the bot owns implementation and implementation evidence. Preserve current changes and do not edit another operator's active work.
+- Grok Bot owns direction and review notes; Jet Portfolio Manager owns implementation and implementation evidence. Preserve current changes and do not edit another operator's active work.
 - If no actionable work exists, stop. If work remains in progress at review time, defer it to the next run.
 - Notify Jet only for a newly completed review, a new blocker, or a required decision. Avoid repeated unchanged notices.
 - Schedule approval does not authorize merging or deployment. Jet still approves those explicitly.
@@ -102,15 +102,16 @@ Result: DONE. PR https://github.com/hjharding18-alt/jet-portfolio/pull/3 (review
 Blocker or next action: None. Omitted metrics and internal names remain unpublished pending any future approval by Jet.
 
 ### PORT-004 — Content + accessibility audit of live v2
-Status: IMPLEMENTED_AWAITING_REVIEW
+Status: DONE
 Owner: Jet Portfolio Manager
 Source: Direct request from Jet, relayed by Jet Ops, 2026-10-19.
 Requested outcome: Audit the live v2 site (https://jet-portfolio.pages.dev/) and main source against the content rules and accessibility standards; fix clear violations in this repository only.
 Authorized scope: Case-study copy and Golf With Jet screenshots (assets/gwj/) checked for invented figures, internal company names or confidential numbers, direct-report implications, and Golf With Jet private data (real names, emails, scores, user data); axe audit; layout at 1440px/390px with screenshots; panels; links. Never modify the Golf With Jet repository.
-Publication: PR review required
+Publication: explicitly authorized by Jet (merge + deploy of wording PR #11 and status PR #12, 2026-11-09 ~8:30 AM America/New_York, recorded in owner chat message t29u / parent pt29u). Audit findings PR #10 remains open for reference; Jet did not authorize merging #10.
 Acceptance criteria: PR with pass/fail per check, evidence screenshots, fixes made, and items needing Jet's decision.
-Result: Implemented on open PR #10 (branch port-004-v2-audit, head 7ae2b21): all checks pass, no code fixes needed; findings and decision items listed on the PR.
-Blocker or next action: Jet's wording answers are being applied on open PR #11 (copy/pr10-wording, preview only). Awaiting Jet's explicit approval before any merge or deploy. Do not re-run the audit.
+Result: DONE. Audit implemented on PR #10 (branch port-004-v2-audit, head 7ae2b215; left open, not merged). Approved wording edits merged via PR #11 as 59029e682c15440edfbbfd2903ba6a14c170845d. Status reconciliation merged via PR #12 as b33f785c6e141bfeac35672b8db8d217c1bf8254. Production deploy of main (b33f785) with wrangler 3.114.17 to Pages project jet-portfolio: deployment 83773ad7-9053-49d8-9aaf-a3e2c2ba43ab (https://83773ad7.jet-portfolio.pages.dev). Live https://jet-portfolio.pages.dev/ HTML byte-identical to main index.html. Confirmed live: retail outcome "optimized data models and improved reporting efficiency"; three "Developed and maintained enterprise BI solutions"; hero "Senior Software Developer"; "Technical Lead" and "independently developed and launched" unchanged. "Primary BI developer" and "materially reduced the model footprint" absent.
+Blocker or next action: None for PORT-004 publication. PR #10 remains open as the audit evidence record.
+
 
 ## Task template
 
@@ -135,3 +136,5 @@ Blocker or next action:
 - 2026-10-15 8:38 PM America/New_York: Jet confirmed the live LinkedIn link opens correctly and Jet Portfolio Manager's weekday 6:30 PM routine is confirmed. ChatGPT's 6 PM and 8 PM weekday schedule is configured. No remaining setup blocker is recorded; no new implementation tasks were requested.
 - 2026-10-16 (UTC): Jet Portfolio Manager merged PR #3 (5cbd98e) and deployed PORT-003 to jet-portfolio production (deployment de4cfd17) under Jet's approval (https://github.com/hjharding18-alt/jet-portfolio/pull/3#issuecomment-6207486300); live verification passed; issue #2 closed.
 - 2026-10-19 (retroactive governance note): Jet explicitly approved the merge and deployment of PR #6 (redesign v2) and PR #7 (page flow), relayed by Jet Ops on 2026-10-18 at 9:31 PM America/New_York. Both were already merged and live; this records the approval. No code change.
+- 2026-11-09 (~8:30 AM America/New_York): Jet explicitly authorized merge and deploy of PR #11 and PR #12, retroactive approval record for PR #8, and final coordinator switch to Grok Bot (92829d1c). Recorded in owner chat (t29u). ChatGPT no longer coordinates.
+- 2026-11-09: Jet Portfolio Manager merged PR #11 (59029e68) and PR #12 (b33f785), deployed main to jet-portfolio production (deployment 83773ad7), verified live wording. PR #10 left open (not merged). PR #8 approval recorded in this file (retroactive; already merged and live).
