@@ -110,7 +110,7 @@ Authorized scope: Case-study copy and Golf With Jet screenshots (assets/gwj/) ch
 Publication: explicitly authorized by Jet (merge + deploy of wording PR #11 and status PR #12, 2026-11-09 ~8:30 AM America/New_York, recorded in owner chat message t29u / parent pt29u). Audit findings PR #10 remains open for reference; Jet did not authorize merging #10.
 Acceptance criteria: PR with pass/fail per check, evidence screenshots, fixes made, and items needing Jet's decision.
 Result: DONE. Audit implemented on PR #10 (branch port-004-v2-audit, head 7ae2b215; left open, not merged). Approved wording edits merged via PR #11 as 59029e682c15440edfbbfd2903ba6a14c170845d. Status reconciliation merged via PR #12 as b33f785c6e141bfeac35672b8db8d217c1bf8254. Production deploy of main (b33f785) with wrangler 3.114.17 to Pages project jet-portfolio: deployment 83773ad7-9053-49d8-9aaf-a3e2c2ba43ab (https://83773ad7.jet-portfolio.pages.dev). Live https://jet-portfolio.pages.dev/ HTML byte-identical to main index.html. Confirmed live: retail outcome "optimized data models and improved reporting efficiency"; three "Developed and maintained enterprise BI solutions"; hero "Senior Software Developer"; "Technical Lead" and "independently developed and launched" unchanged. "Primary BI developer" and "materially reduced the model footprint" absent.
-Blocker or next action: None for PORT-004 publication. PR #10 remains open as the audit evidence record.
+Blocker or next action: None. Audit evidence PR #10 merged 2026-11-09 as 52233e1578e171b8dfa2713872239779243518cb under Jet approval (chat t30u / parent pt30u).
 
 
 ## Task template
@@ -138,3 +138,4 @@ Blocker or next action:
 - 2026-10-19 (retroactive governance note): Jet explicitly approved the merge and deployment of PR #6 (redesign v2) and PR #7 (page flow), relayed by Jet Ops on 2026-10-18 at 9:31 PM America/New_York. Both were already merged and live; this records the approval. No code change.
 - 2026-11-09 (~8:30 AM America/New_York): Jet explicitly authorized merge and deploy of PR #11 and PR #12, retroactive approval record for PR #8, and final coordinator switch to Grok Bot (92829d1c). Recorded in owner chat (t29u). ChatGPT no longer coordinates.
 - 2026-11-09: Jet Portfolio Manager merged PR #11 (59029e68) and PR #12 (b33f785), deployed main to jet-portfolio production (deployment 83773ad7), verified live wording. PR #10 left open (not merged). PR #8 approval recorded in this file (retroactive; already merged and live).
+- 2026-11-09 (~8:37 AM America/New_York): Jet explicitly authorized merge of PR #10 (audit evidence). Merged as 52233e15. Docs/screenshots only; no production redeploy. Recorded in owner chat (t30u).
