@@ -126,6 +126,19 @@ Acceptance criteria: Experience and project copy contains no metrics, counts, pe
 Result: DONE. PR #15 https://github.com/hjharding18-alt/jet-portfolio/pull/15 (reviewed head 79cb35df; approval comment https://github.com/hjharding18-alt/jet-portfolio/pull/15#issuecomment-6823829090) squash-merged as 5eb3491b7454b22b05c750d7a46771dddef29476. Deployed main manually with wrangler 3.114.17 on Node 20 (site payload only: index.html, jet-headshot.jpg, assets/) to Pages project jet-portfolio (production, branch main): deployment e8bc7d77-48fb-49e3-bd4c-3be6a83e99f2 (https://e8bc7d77.jet-portfolio.pages.dev). Live https://jet-portfolio.pages.dev/ index.html byte-identical to main (md5 49fa5c1c71d198cefb0cedb7628531dc). New wording confirmed live, including "Engineering practice", "Delivered to users" and "from requirements to release". Removed figures ("1,174", "Phase 9", "Delivered · 2026", "By the numbers", "six formats") are absent. "Technical Lead" and "independently developed and launched" are unchanged. Live headless Chrome at 1440px/390px: no horizontal overflow, no JS errors, accordions open. No automated tests in the repo; headless checks only, no physical device.
 Blocker or next action: None. Open copy questions for Jet are listed on PR #15 (hero "10 years"/"decade", phase-bar numerals, screenshot alt text, snapshot month, Synapse→Fabric mention, Drink Handicap line).
 
+### PORT-006 — PORT-005 follow-up decisions
+Status: IN_PROGRESS
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-11-12T12:47Z
+Branch: port-006-port-005-followups
+Source: Jet's decisions on the six PORT-005 open questions, via primary coordinator Grok Bot, 2026-11-12 ~7:46 AM America/New_York (owner chat message t36u / parent pt36u).
+Requested outcome: (1) Generalize the hero "10 years" stat and the "For a decade" intro so no specific number appears, keeping them honest. (2) Remove or generalize the numbered Golf With Jet rebuild phases and describe progress qualitatively, keeping the visual style. (3) Remove "October 2026" from the snapshot badge and use a non-dated status. (4) Keep "Azure Synapse to Microsoft Fabric" unchanged. (5) Describe the "Drink Handicap" side game professionally without the casual name, inventing no features. (6) Keep screenshot screen-reader descriptions unchanged.
+Authorized scope: index.html copy only; CSS, design, layout and headshot unchanged. Never modify the Golf with Jet repository or deployments.
+Publication: explicitly authorized by Jet (merge + deploy, 2026-11-12 ~7:46 AM America/New_York, owner chat message t36u / parent pt36u).
+Acceptance criteria: Items 1–3 and 5 applied and items 4 and 6 unchanged; no new facts; HTML parses and renders; live index.html matches main after deploy.
+Result:
+Blocker or next action:
+
 ## Task template
 
 ID:
