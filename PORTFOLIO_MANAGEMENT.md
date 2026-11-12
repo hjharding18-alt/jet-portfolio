@@ -127,7 +127,7 @@ Result: DONE. PR #15 https://github.com/hjharding18-alt/jet-portfolio/pull/15 (r
 Blocker or next action: None. Open copy questions for Jet are listed on PR #15 (hero "10 years"/"decade", phase-bar numerals, screenshot alt text, snapshot month, Synapse→Fabric mention, Drink Handicap line).
 
 ### PORT-006 — PORT-005 follow-up decisions
-Status: IN_PROGRESS
+Status: IMPLEMENTED_AWAITING_REVIEW
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-11-12T12:47Z
 Branch: port-006-port-005-followups
@@ -136,8 +136,8 @@ Requested outcome: (1) Generalize the hero "10 years" stat and the "For a decade
 Authorized scope: index.html copy only; CSS, design, layout and headshot unchanged. Never modify the Golf with Jet repository or deployments.
 Publication: explicitly authorized by Jet (merge + deploy, 2026-11-12 ~7:46 AM America/New_York, owner chat message t36u / parent pt36u).
 Acceptance criteria: Items 1–3 and 5 applied and items 4 and 6 unchanged; no new facts; HTML parses and renders; live index.html matches main after deploy.
-Result:
-Blocker or next action:
+Result: Implemented on branch port-006-port-005-followups (copy commit ad9b625d). Hero stat "10 years" became "Extensive" with "…financial reporting experience". "For a decade" became "Throughout my career". The phase-bar numerals became check marks, "Now" and "Next", with a qualitative aria-label. The snapshot badge "October 2026" became "Rebuild in testing". "Drink Handicap side game for the fun rounds" became "optional side-game handicap for social rounds". "Azure Synapse to Microsoft Fabric" and the screenshot alt text are unchanged. Checks: no automated tests in the repo; HTML parse clean; headless Chrome at 1440px/390px showed no overflow and no JS errors, accordions open, screenshots reviewed. Visible digits are now limited to employment and education years, section labels and the footer year.
+Blocker or next action: Merge and deploy under t36u, then mark DONE.
 
 ## Task template
 
