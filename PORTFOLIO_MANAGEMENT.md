@@ -127,7 +127,7 @@ Result: DONE. PR #15 https://github.com/hjharding18-alt/jet-portfolio/pull/15 (r
 Blocker or next action: None. Open copy questions for Jet are listed on PR #15 (hero "10 years"/"decade", phase-bar numerals, screenshot alt text, snapshot month, Synapse→Fabric mention, Drink Handicap line).
 
 ### PORT-006 — PORT-005 follow-up decisions
-Status: IMPLEMENTED_AWAITING_REVIEW
+Status: DONE
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-11-12T12:47Z
 Branch: port-006-port-005-followups
@@ -136,8 +136,8 @@ Requested outcome: (1) Generalize the hero "10 years" stat and the "For a decade
 Authorized scope: index.html copy only; CSS, design, layout and headshot unchanged. Never modify the Golf with Jet repository or deployments.
 Publication: explicitly authorized by Jet (merge + deploy, 2026-11-12 ~7:46 AM America/New_York, owner chat message t36u / parent pt36u).
 Acceptance criteria: Items 1–3 and 5 applied and items 4 and 6 unchanged; no new facts; HTML parses and renders; live index.html matches main after deploy.
-Result: Implemented on branch port-006-port-005-followups (copy commit ad9b625d). Hero stat "10 years" became "Extensive" with "…financial reporting experience". "For a decade" became "Throughout my career". The phase-bar numerals became check marks, "Now" and "Next", with a qualitative aria-label. The snapshot badge "October 2026" became "Rebuild in testing". "Drink Handicap side game for the fun rounds" became "optional side-game handicap for social rounds". "Azure Synapse to Microsoft Fabric" and the screenshot alt text are unchanged. Checks: no automated tests in the repo; HTML parse clean; headless Chrome at 1440px/390px showed no overflow and no JS errors, accordions open, screenshots reviewed. Visible digits are now limited to employment and education years, section labels and the footer year.
-Blocker or next action: Merge and deploy under t36u, then mark DONE.
+Result: DONE. PR #17 https://github.com/hjharding18-alt/jet-portfolio/pull/17 (reviewed head eb1b728f; approval comment https://github.com/hjharding18-alt/jet-portfolio/pull/17#issuecomment-6824038444) squash-merged as 402369c092bd2df6c453e35c310072cdb0810e1b. Deployed main manually with wrangler 3.114.17 on Node 20 (site payload only: index.html, jet-headshot.jpg, assets/) to Pages project jet-portfolio (production, branch main): deployment 4e42b119-120e-4352-a86a-fa015462a66c (https://4e42b119.jet-portfolio.pages.dev). Live https://jet-portfolio.pages.dev/ index.html byte-identical to main (md5 c9d0af56410edea72e4d751710dfaeeb). Confirmed live: "Extensive", "Throughout my career", "Rebuild in testing", "optional side-game handicap for social rounds", and the phase bar showing check marks/Now/Next. "Azure Synapse to Microsoft Fabric" and the screenshot alt text are unchanged. "10 years", "For a decade", "October 2026", "Drink Handicap" and the phase numerals are absent. Live headless Chrome at 1440px/390px: no overflow, no JS errors, accordions open. No automated tests in the repo; headless checks only.
+Blocker or next action: None. PORT-005 open questions resolved by Jet (t36u).
 
 ## Task template
 
@@ -166,3 +166,4 @@ Blocker or next action:
 - 2026-11-09: Jet Portfolio Manager merged PR #11 (59029e68) and PR #12 (b33f785), deployed main to jet-portfolio production (deployment 83773ad7), verified live wording. PR #10 left open (not merged). PR #8 approval recorded in this file (retroactive; already merged and live).
 - 2026-11-09 (~8:37 AM America/New_York): Jet explicitly authorized merge of PR #10 (audit evidence). Merged as 52233e15. Docs/screenshots only; no production redeploy. Recorded in owner chat (t30u).
 - 2026-11-12 (~7:37 AM America/New_York): Jet explicitly authorized merge and deploy of PORT-005 (owner chat t35u). Jet Portfolio Manager merged PR #15 (5eb3491) and deployed main to jet-portfolio production (deployment e8bc7d77); live HTML verified byte-identical to main.
+- 2026-11-12 (~7:46 AM America/New_York): Jet decided the six PORT-005 open questions and authorized merge and deploy of the follow-up (owner chat t36u). Jet Portfolio Manager merged PR #17 (402369c) and deployed main to jet-portfolio production (deployment 4e42b119); live HTML verified byte-identical to main.
