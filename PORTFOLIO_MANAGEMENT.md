@@ -114,7 +114,7 @@ Blocker or next action: None. Audit evidence PR #10 merged 2026-11-09 as 52233e1
 
 
 ### PORT-005 — Application-ready polish of Experience and Selected Projects
-Status: IMPLEMENTED_AWAITING_REVIEW
+Status: DONE
 Owner: Jet Portfolio Manager
 Started at (UTC): 2026-11-12T12:36Z
 Branch: port-005-application-polish
@@ -123,8 +123,8 @@ Requested outcome: Refine the Experience and Selected Projects sections (includi
 Authorized scope: index.html copy only. Preserve the approved design, headshot, layout, section structure and CSS. Keep content honest, sanitized and public-safe; do not invent metrics, outcomes, tools or responsibilities; never imply direct-report management. Keep Jet-approved wording "Technical Lead" and "independently developed and launched". Employment and education date ranges stay. Do not touch Golf with Jet's repository or deployments.
 Publication: explicitly authorized by Jet (merge + deploy, 2026-11-12 ~7:37 AM America/New_York, owner chat message t35u / parent pt35u). t34u had authorized implementation and a PR only.
 Acceptance criteria: Experience and project copy contains no metrics, counts, percentages, dollar figures, internal names or sensitive phrasing; facts are unchanged or generalized, never invented; HTML parses and renders; ambiguous items are listed as questions for Jet on the PR.
-Result: Implemented on PR #15 https://github.com/hjharding18-alt/jet-portfolio/pull/15 (copy head 533f384c). index.html copy only: Experience and project copy rephrased; years removed from the retail delivery lines; Golf With Jet counts, phase numbers and version number generalized to qualitative copy. Checks: no automated tests in the repo; HTML structure parse clean; headless Chrome on the local file at 1440px/390px showed no horizontal overflow and no JS errors, accordions open, screenshots reviewed. Limitations: headless only, no physical device. Open questions for Jet are listed on the PR.
-Blocker or next action: Merge and deploy under t35u, then mark DONE.
+Result: DONE. PR #15 https://github.com/hjharding18-alt/jet-portfolio/pull/15 (reviewed head 79cb35df; approval comment https://github.com/hjharding18-alt/jet-portfolio/pull/15#issuecomment-6823829090) squash-merged as 5eb3491b7454b22b05c750d7a46771dddef29476. Deployed main manually with wrangler 3.114.17 on Node 20 (site payload only: index.html, jet-headshot.jpg, assets/) to Pages project jet-portfolio (production, branch main): deployment e8bc7d77-48fb-49e3-bd4c-3be6a83e99f2 (https://e8bc7d77.jet-portfolio.pages.dev). Live https://jet-portfolio.pages.dev/ index.html byte-identical to main (md5 49fa5c1c71d198cefb0cedb7628531dc). New wording confirmed live, including "Engineering practice", "Delivered to users" and "from requirements to release". Removed figures ("1,174", "Phase 9", "Delivered · 2026", "By the numbers", "six formats") are absent. "Technical Lead" and "independently developed and launched" are unchanged. Live headless Chrome at 1440px/390px: no horizontal overflow, no JS errors, accordions open. No automated tests in the repo; headless checks only, no physical device.
+Blocker or next action: None. Open copy questions for Jet are listed on PR #15 (hero "10 years"/"decade", phase-bar numerals, screenshot alt text, snapshot month, Synapse→Fabric mention, Drink Handicap line).
 
 ## Task template
 
@@ -152,3 +152,4 @@ Blocker or next action:
 - 2026-11-09 (~8:30 AM America/New_York): Jet explicitly authorized merge and deploy of PR #11 and PR #12, retroactive approval record for PR #8, and final coordinator switch to Grok Bot (92829d1c). Recorded in owner chat (t29u). ChatGPT no longer coordinates.
 - 2026-11-09: Jet Portfolio Manager merged PR #11 (59029e68) and PR #12 (b33f785), deployed main to jet-portfolio production (deployment 83773ad7), verified live wording. PR #10 left open (not merged). PR #8 approval recorded in this file (retroactive; already merged and live).
 - 2026-11-09 (~8:37 AM America/New_York): Jet explicitly authorized merge of PR #10 (audit evidence). Merged as 52233e15. Docs/screenshots only; no production redeploy. Recorded in owner chat (t30u).
+- 2026-11-12 (~7:37 AM America/New_York): Jet explicitly authorized merge and deploy of PORT-005 (owner chat t35u). Jet Portfolio Manager merged PR #15 (5eb3491) and deployed main to jet-portfolio production (deployment e8bc7d77); live HTML verified byte-identical to main.
