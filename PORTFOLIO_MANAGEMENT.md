@@ -114,10 +114,10 @@ Blocker or next action: None. Audit evidence PR #10 merged 2026-11-09 as 52233e1
 
 
 ### PORT-005 — Application-ready polish of Experience and Selected Projects
-Status: READY
-Owner:
-Started at (UTC):
-Branch:
+Status: IN_PROGRESS
+Owner: Jet Portfolio Manager
+Started at (UTC): 2026-11-12T12:36Z
+Branch: port-005-application-polish
 Source: Direct request from Jet via primary coordinator Grok Bot, 2026-11-12 (owner chat message t34u / parent pt34u).
 Requested outcome: Refine the Experience and Selected Projects sections (including the Enterprise Analytics and Golf With Jet project details) to emphasize high-quality narrative work and project summaries suitable for professional job applications. Remove or generalize any residual numbers, dates that look like internal metrics, or potentially sensitive phrasing. Focus on impact through process, ownership and outcomes described qualitatively.
 Authorized scope: index.html copy only. Preserve the approved design, headshot, layout, section structure and CSS. Keep content honest, sanitized and public-safe; do not invent metrics, outcomes, tools or responsibilities; never imply direct-report management. Keep Jet-approved wording "Technical Lead" and "independently developed and launched". Employment and education date ranges stay. Do not touch Golf with Jet's repository or deployments.
