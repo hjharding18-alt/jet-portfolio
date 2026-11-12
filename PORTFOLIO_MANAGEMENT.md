@@ -1,6 +1,6 @@
 # Portfolio management
 
-Updated: 2026-11-09
+Updated: 2026-11-12
 Owner: Jet Harding
 Coordinator: Grok Bot (92829d1c) — final. ChatGPT no longer coordinates.
 Implementation bot: Jet Portfolio Manager (created; weekday 6:30 PM America/New_York routine confirmed by Jet on 2026-10-15)
@@ -112,6 +112,19 @@ Acceptance criteria: PR with pass/fail per check, evidence screenshots, fixes ma
 Result: DONE. Audit implemented on PR #10 (branch port-004-v2-audit, head 7ae2b215; left open, not merged). Approved wording edits merged via PR #11 as 59029e682c15440edfbbfd2903ba6a14c170845d. Status reconciliation merged via PR #12 as b33f785c6e141bfeac35672b8db8d217c1bf8254. Production deploy of main (b33f785) with wrangler 3.114.17 to Pages project jet-portfolio: deployment 83773ad7-9053-49d8-9aaf-a3e2c2ba43ab (https://83773ad7.jet-portfolio.pages.dev). Live https://jet-portfolio.pages.dev/ HTML byte-identical to main index.html. Confirmed live: retail outcome "optimized data models and improved reporting efficiency"; three "Developed and maintained enterprise BI solutions"; hero "Senior Software Developer"; "Technical Lead" and "independently developed and launched" unchanged. "Primary BI developer" and "materially reduced the model footprint" absent.
 Blocker or next action: None. Audit evidence PR #10 merged 2026-11-09 as 52233e1578e171b8dfa2713872239779243518cb under Jet approval (chat t30u / parent pt30u).
 
+
+### PORT-005 — Application-ready polish of Experience and Selected Projects
+Status: READY
+Owner:
+Started at (UTC):
+Branch:
+Source: Direct request from Jet via primary coordinator Grok Bot, 2026-11-12 (owner chat message t34u / parent pt34u).
+Requested outcome: Refine the Experience and Selected Projects sections (including the Enterprise Analytics and Golf With Jet project details) to emphasize high-quality narrative work and project summaries suitable for professional job applications. Remove or generalize any residual numbers, dates that look like internal metrics, or potentially sensitive phrasing. Focus on impact through process, ownership and outcomes described qualitatively.
+Authorized scope: index.html copy only. Preserve the approved design, headshot, layout, section structure and CSS. Keep content honest, sanitized and public-safe; do not invent metrics, outcomes, tools or responsibilities; never imply direct-report management. Keep Jet-approved wording "Technical Lead" and "independently developed and launched". Employment and education date ranges stay. Do not touch Golf with Jet's repository or deployments.
+Publication: PR review required. t34u authorizes implementation and a PR only, not merge or deploy.
+Acceptance criteria: Experience and project copy contains no metrics, counts, percentages, dollar figures, internal names or sensitive phrasing; facts are unchanged or generalized, never invented; HTML parses and renders; ambiguous items are listed as questions for Jet on the PR.
+Result:
+Blocker or next action:
 
 ## Task template
 
